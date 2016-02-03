@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{! Place favicon.ico in the asset directory }}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" href="{{asset "css/main.css"}}">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+   
+    {{! Everything else gets inserted here }}
+
+    <div id="container">
+    {{{body}}}
+    </div>
+
+    {{! Footer }}
+    <footer id="footer">    
+    {{! Footer - Subscription }}
+    {{> footer-subscription-block}}
+
+    {{! Footer - Colons info }}
+    {{> footer-info-block}}
+
+    {{! Footer - info }}
+    <div class="footer_info_block container">
+        <div class="footer_info wrap">
+            <div class="footer_copyrightBlock"><a href="{{@blog.url}}" class="footer_logo">{{@blog.title}}</a>
+                <p class="footer_copyright">Copyright &copy; {{date format="YYYY"}}, {{@blog.title}}. All Rights Reserved</p>
+            </div>
+            <div class="footer_socialIcons">
+                {{> social-icons-white}}
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/classie.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+    <script type="text/javascript">
+        var disqus_shortname = 'foresttheme';
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    
+</body>
+
+</html>

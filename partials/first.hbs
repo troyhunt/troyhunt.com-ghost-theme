@@ -1,0 +1,77 @@
+{{! Popular articals }}
+
+
+
+{{#foreach posts}}
+
+
+{{#if featured}}
+
+
+<div class="feature_block container ">
+                {{! Main popular artical }}
+                <div class="hover"></div>
+                <article class="feature_article-one">            
+                    <header class="feature_head-one">
+                        <span class="article_tag">{{tags}}</span>
+                        <h1 class="article_title"><a href="{{url}}">{{{title}}}</a></h1>
+                        <p class="feature_textBig">{{excerpt words="30"}}...</p>
+                        <span class="article_info">by <a href="#">{{author}}</a> <span>on</span> {{date format="DD MMMM YYYY"}} {{tags}}</span>
+                    </header>
+                </article>
+            </div>
+
+
+{{/if}}
+
+{{/foreach}}
+
+
+
+<div class="feature">
+                            {{#posts.[1]}}
+                            {{#has tag="Feature"}}
+                            {{! Second popular artical }}
+                            <article class="feature_article col-first">
+                                <div class="hover"></div>
+                                <header class="feature_head">
+                                    <span class="article_tag">{{tags}}</span>
+                                    <h2 class="article_title"><a href="{{url}}">{{{title}}}</a></h2>
+                                    <p class="feature_text">{{excerpt words="30"}}...</p>
+                                    <span class="article_info">by <a href="#">{{author}}</a> <span>on</span> {{date format="DD MMMM YYYY"}} {{tags}}</span>
+                                </header>
+                            </article>
+                            {{/has}}
+                            {{/posts.[1]}}
+
+                            {{#posts.[2]}}
+                            {{#has tag="Feature"}}
+                            {{! Third popular artical }}
+                            <article class="feature_article col-second">
+                                <div class="hover"></div>
+                                <header class="feature_head">
+                                    <span class="article_tag">{{tags}}</span>
+                                    <h2 class="article_title"><a href="{{url}}">{{{title}}}</a></h2>
+                                    <p class="feature_text">{{excerpt words="30"}}...</p>
+                                    <span class="article_info">by <a href="#">{{author}}</a> <span>on</span> {{date format="DD MMMM YYYY"}} {{tags}}</span>
+                                </header>
+                            </article>
+                            {{/has}}
+                            {{/posts.[2]}}
+
+                            {{#posts.[3]}}
+                            {{#has tag="Feature"}}
+                            {{! Fourth popular artical }}
+                            <article class="feature_article col-third">
+                                <div class="hover"></div>
+                                <header class="feature_head">
+                                    <span class="article_tag">{{tags}}</span>
+                                    <h2 class="article_title"><a href="{{url}}">{{{title}}}</a></h2>
+                                    <p class="feature_text">{{excerpt words="30"}}...</p>
+                                    <span class="article_info">by <a href="#">{{author}}</a> <span>on</span> {{date format="DD MMMM YYYY"}} {{tags}}</span>
+                                </header>
+                            </article>
+                            {{/has}}
+                            {{/posts.[3]}}
+
+                        </div>

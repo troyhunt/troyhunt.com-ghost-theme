@@ -1,0 +1,94 @@
+{{! Articales }}
+{{! This is the post loop - each post will be output using this markup }}
+
+{{#is "home"}}
+    {{#foreach posts}}
+        {{#if @first}}
+        {{else}}
+            {{#if featured}}
+                    {{! Featured artical }}
+                    <div class="article container{{#if featured}} featured {{/if}}">
+                        <article class="article_content wrap" style="background-image: url({{image}})" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                            <div class="hover"></div>
+                            <header class="post_head post">
+                                <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                                <span class="post_info"><span>by</span> {{author}} <span>on </span>
+                                <time datetime="{{date format="DD MMMM YYYY"}}">{{date format="DD MMMM YYYY"}}</time>
+                                </span>
+                            </header>
+                            {{#if tags}}
+                            <footer class="post_tag">
+                                {{#foreach tags}}
+                                <a class="tag" href="{{url}}">{{name}}</a>
+                                {{/foreach}}
+                            </footer>
+                            {{/if}}
+                        </article>
+                    </div>
+            {{else}}
+                <div class="article container">
+                    <article class="article_content wrap" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                        <header class="post_head post">
+                            <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                            <span class="post_info"><span>by</span> {{author}} <span>on </span>
+                            <time datetime="{{date format="DD MMMM YYYY"}}">{{date format="DD MMMM YYYY"}}</time>
+                            </span>
+                        </header>
+                        <section class="article_text post">
+                            <p itemprop="description">{{excerpt words="80"}}...
+                                <a href="{{url}}" class="article_link-more i-arrowLink"></a>
+                            </p>
+                        </section>
+                        {{#if tags}}
+                        <footer class="post_tag">
+                            {{#foreach tags}}
+                            <a class="tag" href="{{url}}">{{name}}</a>
+                            {{/foreach}}
+                        </footer>
+                    {{/if}}
+                    </article>
+                </div>
+            {{/if}}
+        {{/if}}
+    {{/foreach}}
+{{else}}
+    {{#foreach posts}}
+        {{#if featured}}
+            {{! Featured artical }}
+            <div class="article container{{#if featured}} featured {{/if}}">
+                <article class="article_content wrap" style="background-image: url({{image}})" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                    <div class="hover"></div>
+                    <header class="post_head post">
+                        <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                                        <span class="post_info"><span>by</span> {{author}} <span>on </span>
+                        <time datetime="{{date format="DD MMMM YYYY"}}">{{date format="DD MMMM YYYY"}}</time>
+                        </span>
+                    </header>
+                </article>
+            </div>
+        {{else}}
+            <div class="article container">
+                <article class="article_content wrap" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                    <header class="post_head post">
+                        <h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2>
+                        <span class="post_info"><span>by</span> {{author}} <span>on </span>
+                        <time datetime="{{date format="DD MMMM YYYY"}}">{{date format="DD MMMM YYYY"}}</time>
+                        </span>
+                    </header>
+                    <section class="article_text post">
+                        <p itemprop="description">{{excerpt words="120"}}...
+                            <a href="{{url}}" class="article_link-more i-arrowLink"></a>
+                        </p>
+                    </section>
+                    {{#if tags}}
+                    <footer class="post_tag">
+                            {{#foreach tags}}
+                            <a class="tag" href="{{url}}">{{name}}</a>
+                            {{/foreach}}
+                    </footer>
+                    {{/if}}
+                </article>
+            </div>
+        {{/if}}
+    {{/foreach}}
+{{/is}}

@@ -1,0 +1,11 @@
+    <div class="header_navMenu_wrap">
+        <nav role="navigation">
+            <ul class="header_navMenu">
+            {{#foreach navigation}}
+            <li class="navMenu_list" role="presentation">
+                <a class="navMenu_link" href="{{url absolute="true"}}">{{label}}</a>
+            </li>
+            {{/foreach}}
+            </ul>
+        </nav>
+    </div>
