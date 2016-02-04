@@ -1715,6 +1715,11 @@ code
   font-family: "PT Sans",Georgia,Times,serif;
 }
 
+.article-open_shere .fa
+{
+  font-size: 16px;
+}
+
 .tag
 {
   padding: 7px 12px;
