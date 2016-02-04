@@ -995,12 +995,13 @@ code
 
 .header_block
 {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   border-bottom: 1px solid rgba(252,251,247,.2);
   z-index: 99;
+  background-color: rgba(0,0,0,.4);
 }
 
 .header_logo
@@ -1276,7 +1277,7 @@ code
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  height: 700px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: 50% 10%;
   background-size: cover;
@@ -2090,7 +2091,7 @@ code
 
 .pages
 {
-  height: 470px;
+  height: 500px;
 }
 
   .pages.no-cover
