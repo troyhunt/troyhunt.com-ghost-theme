@@ -1111,12 +1111,26 @@ code
 
 .socialIcons_link
 {
-  display: inline-block;
-  padding: 8px;
+  display: inline-table;
   margin-left: 15px;
   background-color: rgba(252,251,247,.13);
   border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
 }
+
+  .socialIcons_link a
+  {
+    color: #847b79;
+    font-size: 17px;
+    margin-top: 8px;  
+  }
+  
+  .header_socialIcons.light .socialIcons_link a
+  {
+    color: #fcfbf7;
+  }
 
 .header_navMenu
 {
@@ -2340,6 +2354,11 @@ code
   top: 27%;
   opacity: .6;
 }
+
+  .footer_socialIcons a
+  {
+    color: #ffffff;
+  }
 
 .i-arrowLeft:after, .i-arrowLink:before, .i-arrowRight:after, .i-chart:before, .i-close:before, .i-close:hover:before, .i-facebook-b:before, .i-facebook-button:before, .i-facebook:before, .i-feed-b-button:before, .i-feed-b:before, .i-feed-button:before, .i-feed:before, .i-google-b:before, .i-google-button:before, .i-google:before, .i-instagram-b:before, .i-instagram-button:before, .i-instagram:before, .i-link:before, .i-map:before, .i-pinterest-b:before, .i-pinterest-button:before, .i-pinterest:before, .i-twitter-b:before, .i-twitter-b:hover:before, .i-twitter-button:before, .i-twitter:before, .i-twitter:hover:before, .i-vk-b:before, .i-vk-button:before, .i-vk:before
 {
