@@ -415,11 +415,12 @@ pre
   border: 1px solid #cec9c4;
   padding: 10px;
   font-family: Inconsolata,monospace,sans-serif;
-  font-size: .9em;
-  white-space: pre;
+  font-size: 1.1em;
+  white-space: pre-wrap;
   overflow: auto;
   background: #eeedea;
   border-radius: 3px;
+  line-height: 1.2em;
 }
 
 .article_readNext:after, .article_readNext:before, .container:after, .container:before, .wrap:after, .wrap:before
