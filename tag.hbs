@@ -1,13 +1,8 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{#if tag.image}}
 {{! Header transparent}}
 {{> header}}
-{{else}}
-{{! Header untransparent}}
-{{> header-nocover}}
-{{/if}}
 
 <div class="tags container container{{#if tag.image}}" style="background-image: url({{tag.image}}){{else}} no-cover {{/if}}">
     <div class="hover"></div>

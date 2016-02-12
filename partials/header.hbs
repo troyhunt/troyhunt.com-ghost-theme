@@ -1,18 +1,9 @@
-    <!-- Header  -->
     <div class="header_block container">
         <div class="header">
-            <!-- Button of navigation menu  -->
             <button class="header_navMenu_button i-menu" id="open-button"><span>Menu</span></button>
-            <!-- Logo -->
-            <div class="header_logo">
-                <a class="header_logo_name" href="{{@blog.url}}">{{@blog.title}}</a>
-                <p class="header_logo_shortInfo">{{@blog.description}}</p>
-            </div>
-            <!-- Social links -->
+            {{navigation}}
             <div class="header_socialIcons light">
                 {{> social-icons}}
             </div>
         </div>
     </div>
-
-    {{navigation}}

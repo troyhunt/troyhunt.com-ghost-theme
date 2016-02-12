@@ -3,8 +3,7 @@
 
 {{#is "home"}}
     {{#foreach posts}}
-        {{#if @first}}
-        {{else}}
+
             {{#if featured}}
                     {{! Featured artical }}
                     <div class="article container{{#if featured}} featured {{/if}}">
@@ -49,7 +48,7 @@
                     </article>
                 </div>
             {{/if}}
-        {{/if}}
+
     {{/foreach}}
 {{else}}
     {{#foreach posts}}

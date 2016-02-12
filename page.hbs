@@ -6,13 +6,8 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-{{#if image}}
 {{! Header transparent}}
 {{> header}}
-{{else}}
-{{! Header untransparent}}
-{{> header-nocover}}
-{{/if}}
 
 <div class="pages container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <div class="hover"></div>
