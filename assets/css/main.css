@@ -295,7 +295,7 @@ h4
   font-size: 1.9em;
 }
 
-@media (min-width:0)and (max-width:45em)
+@media (min-width:0)and (max-width:25em)
 {
   h1
   {
@@ -1062,6 +1062,11 @@ code
   {
     display: none;
   }
+  
+  .header_navMenu
+  {
+      text-align: center;
+  }
 }
 
 .no-cover.header_block
@@ -1157,14 +1162,9 @@ code
     left: -100px;
     width: 0;
     height: 100%;
-    padding-left: 10%;
     background-color: rgba(44,42,36,.98);
     opacity: 0;
     z-index: 9;
-  }
-
-  .header_navMenu_wrap
-  {
     padding-left: 5%;
   }
 }
@@ -1315,7 +1315,7 @@ code
 
   .article-open, .article_feature_first-img, .profile
   {
-    height: 570px;
+    height: 180px;
   }
 
   .article_content
@@ -1400,6 +1400,15 @@ code
   {
     width: 90%;
     bottom: 60px;
+    top: 70px;
+  }
+}
+
+@media (min-width:25.0625em)and (max-width:45em)
+{
+  .article-open_item, .article_item_first, .profile_item, .tags_item
+  {
+    top: 60px;
   }
 }
 
