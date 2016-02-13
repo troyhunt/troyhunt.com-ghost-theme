@@ -508,7 +508,7 @@ code
   border-bottom: 1px solid;
 }
 
-  .article_text p > a.article_link-more
+  .article_text p > a.article_link-more, .article_text p > a.imageLink
   {
     border: none;
   }
