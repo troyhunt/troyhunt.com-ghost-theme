@@ -1887,7 +1887,6 @@ code
 .article-open_author_bio, .profile_meta
 {
   display: table-cell;
-  padding-left: 40px;
   vertical-align: middle;
 }
 
@@ -2147,7 +2146,13 @@ code
 .profile_meta
 {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 30px;
+}
+
+.profile_meta.fa
+{
+  margin-right: 5px;
+  color: #d8d2cc;
 }
 
 @media (min-width:25.0625em)and (max-width:45em)

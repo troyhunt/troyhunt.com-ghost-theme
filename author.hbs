@@ -24,9 +24,10 @@
             <p>{{bio}}</p>
         </section>
         <footer>
-            {{#if location}}<span class="profile_meta i-map">{{location}}</span>{{/if}}
-            {{#if website}}<span class="profile_meta i-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="profile_meta i-chart">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            {{#if location}}<i class="profile_meta fa fa-location-arrow"></i><span class="profile_meta">{{location}}</span>{{/if}}
+            {{#if website}}<i class="profile_meta fa fa-link"></i><span class="profile_meta"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            <i class="profile_meta fa fa-bar-chart"></i>
+            <span class="profile_meta">{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
         </footer>
     </article>
 </div>
