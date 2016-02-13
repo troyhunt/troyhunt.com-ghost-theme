@@ -2,10 +2,12 @@
 <nav class="pagination container" role="navigation">
 	<div class="pagination_content wrap">
     	{{#if prev}}
-        <a class="pagination_next i-arrowLeft" href="{{page_url prev}}">New posts</a>
+        <a class="pagination_next fa fa-long-arrow-left" href="{{page_url prev}}"></a>
+        <a class="pagination_next" href="{{page_url prev}}">New posts</a>
     	{{/if}}    
     	{{#if next}}
-        <a class="pagination_prev i-arrowRight" href="{{page_url next}}">Older posts</a>
+        <a class="pagination_prev fa fa-long-arrow-right" href="{{page_url next}}"></a>
+        <a class="pagination_prev" href="{{page_url next}}">Older posts</a>
     	{{/if}}
     	<ul class="pagination_pages">
     		<li><span>Page {{page}} of {{pages}}</span></li>

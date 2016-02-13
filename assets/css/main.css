@@ -1452,6 +1452,8 @@ code
 .article_link-more
 {
   border: none;
+  color: #ccb285;
+  margin-left: 0.2em;
 }
 
 .article_readNext
@@ -2029,7 +2031,15 @@ code
 {
   float: right;
   margin-left: 0;
-  margin-right: 35px;
+  margin-right: 20px;
+}
+
+.pagination_prev.fa, .pagination_next.fa
+{
+  margin-top: 6px;
+  border: none;
+  color: #cec9c4;
+  font-size: 1.5em;
 }
 
 .pagination_pages
