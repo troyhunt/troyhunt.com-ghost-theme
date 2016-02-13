@@ -520,8 +520,7 @@ code
 
 .article_text ol, .article_text ul
 {
-  padding-top: 1.84615rem;
-  padding-bottom: 1.84615rem;
+  padding-bottom: .92308rem;
   padding-left: 40px;
   color: #595352;
 }
