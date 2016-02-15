@@ -1653,11 +1653,6 @@ code
   position: relative;
 }
 
-.i-arrowLeft:after, .i-arrowLink:before, .i-arrowRight:after, .i-facebook-b:before, .i-facebook-button:before, .i-facebook:before, .i-feed-b-button:before, .i-feed-b:before, .i-feed-button:before, .i-feed:before, .i-google-b:before, .i-google-button:before, .i-google:before, .i-instagram-b:before, .i-instagram-button:before, .i-instagram:before, .i-pinterest-b:before, .i-pinterest-button:before, .i-twitter-b:before, .i-twitter-button:before, .i-twitter:before, .i-vk-b:before, .i-vk-button:before, .i-vk:before
-{
-  content: '';
-}
-
 .post_head
 {
   padding-bottom: 4.06154rem;
@@ -1888,12 +1883,6 @@ code
 {
   display: table-cell;
   vertical-align: middle;
-}
-
-.i-facebook-button:before, .i-feed-b-button:before, .i-feed-button:before, .i-google-button:before, .i-instagram-button:before, .i-pinterest-button:before, .i-twitter-button:before
-{
-  margin-right: 10px;
-  vertical-align: text-bottom;
 }
 
 @media (min-width:0)and (max-width:45em)
@@ -2378,99 +2367,6 @@ code
     color: #ffffff;
   }
 
-.i-arrowLeft:after, .i-arrowLink:before, .i-arrowRight:after, .i-chart:before, .i-close:before, .i-close:hover:before, .i-facebook-b:before, .i-facebook-button:before, .i-facebook:before, .i-feed-b-button:before, .i-feed-b:before, .i-feed-button:before, .i-feed:before, .i-google-b:before, .i-google-button:before, .i-google:before, .i-instagram-b:before, .i-instagram-button:before, .i-instagram:before, .i-link:before, .i-map:before, .i-pinterest-b:before, .i-pinterest-button:before, .i-pinterest:before, .i-twitter-b:before, .i-twitter-b:hover:before, .i-twitter-button:before, .i-twitter:before, .i-twitter:hover:before, .i-vk-b:before, .i-vk-button:before, .i-vk:before
-{
-  display: inline-block;
-  background-image: url(../img/sprite.svg);
-  background-size: 23.71429em 23.71429em;
-}
-
-.lt-ie9 .i-arrowLeft:after, .lt-ie9 .i-arrowLink:before, .lt-ie9 .i-arrowRight:after, .lt-ie9 .i-chart:before, .lt-ie9 .i-close:before, .lt-ie9 .i-close:hover:before, .lt-ie9 .i-facebook-b:before, .lt-ie9 .i-facebook-button:before, .lt-ie9 .i-facebook:before, .lt-ie9 .i-feed-b-button:before, .lt-ie9 .i-feed-b:before, .lt-ie9 .i-feed-button:before, .lt-ie9 .i-feed:before, .lt-ie9 .i-google-b:before, .lt-ie9 .i-google-button:before, .lt-ie9 .i-google:before, .lt-ie9 .i-instagram-b:before, .lt-ie9 .i-instagram-button:before, .lt-ie9 .i-instagram:before, .lt-ie9 .i-link:before, .lt-ie9 .i-map:before, .lt-ie9 .i-pinterest-b:before, .lt-ie9 .i-pinterest-button:before, .lt-ie9 .i-pinterest:before, .lt-ie9 .i-twitter-b:before, .lt-ie9 .i-twitter-b:hover:before, .lt-ie9 .i-twitter-button:before, .lt-ie9 .i-twitter:before, .lt-ie9 .i-twitter:hover:before, .lt-ie9 .i-vk-b:before, .lt-ie9 .i-vk-button:before, .lt-ie9 .i-vk:before
-{
-  background-image: url(../img/sprite.png);
-}
-
-.i-arrowLink:before, .i-arrowLink:hover:before, .lt-ie9 .i-arrowLink:hover:before
-{
-  background-position: 0 0;
-}
-
-.i-arrowLink:before
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  vertical-align: middle;
-}
-
-.lt-ie9 .i-arrowLink:before
-{
-  width: 16px;
-  height: 16px;
-  background-position: 0 0;
-}
-
-.i-arrowLeft:after
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  background-position: -1.14286em -1.14286em;
-  position: absolute;
-  left: 0;
-  top: 30%;
-}
-
-.lt-ie9 .i-arrowLeft:after
-{
-  width: 16px;
-  height: 16px;
-  background-position: -16px -16px;
-}
-
-@media (min-width:0)and (max-width:45em)
-{
-  .i-arrowLeft:after
-  {
-    top: 10%;
-  }
-}
-
-.i-arrowLeft:hover:before
-{
-  background-position: -1.14286em -1.14286em;
-}
-
-.lt-ie9 .i-arrowLeft:hover:before
-{
-  background-position: -16px -16px;
-}
-
-.i-arrowRight:after
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  background-position: -2.28571em -2.28571em;
-  position: absolute;
-  right: 0;
-  top: 30%;
-}
-
-.lt-ie9 .i-arrowRight:after
-{
-  width: 16px;
-  height: 16px;
-  background-position: -32px -32px;
-}
-
-.i-arrowRight:hover:before
-{
-  background-position: -2.28571em -2.28571em;
-}
-
-.lt-ie9 .i-arrowRight:hover:before
-{
-  background-position: -32px -32px;
-}
-
 .i-menu
 {
   display: none;
@@ -2483,15 +2379,6 @@ code
     display: block;
     height: 0;
     z-index: 100;
-  }
-
-  .i-arrowRight:after
-  {
-    top: 10%;
-  }
-
-  .i-menu
-  {
     height: 15px;
   }
 }
@@ -2539,118 +2426,10 @@ code
   transform: translate(-18%,100%)rotate(-45deg);
 }
 
-.i-chart:before, .i-close:before, .i-link:before, .i-map:before
-{
-  content: '';
-}
-
 .show-menu .i-menu:after
 {
   left: 0;
   top: 0;
   box-shadow: 0 8px 0 0 #fcfbf7;
   transform: translate(18%,0)rotate(45deg);
-}
-
-.i-link:before
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  background-position: -14.57143em -14.57143em;
-}
-
-.lt-ie9 .i-link:before
-{
-  width: 16px;
-  height: 16px;
-  background-position: -204px -204px;
-}
-
-.i-link:hover:before
-{
-  background-position: -14.57143em -14.57143em;
-}
-
-.lt-ie9 .i-link:hover:before
-{
-  background-position: -204px -204px;
-}
-
-.i-map:before
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  background-position: -15.71429em -15.71429em;
-  margin-right: 3px;
-  vertical-align: sub;
-}
-
-.lt-ie9 .i-map:before
-{
-  width: 16px;
-  height: 16px;
-  background-position: -220px -220px;
-}
-
-.i-map:hover:before
-{
-  background-position: -15.71429em -15.71429em;
-}
-
-.lt-ie9 .i-map:hover:before
-{
-  background-position: -220px -220px;
-}
-
-.i-chart:before
-{
-  width: 1.21429em;
-  height: 1.21429em;
-  background-position: -3.42857em -3.42857em;
-}
-
-.lt-ie9 .i-chart:before
-{
-  width: 16px;
-  height: 16px;
-  background-position: -48px -48px;
-}
-
-.i-chart:hover:before
-{
-  background-position: -3.42857em -3.42857em;
-}
-
-.lt-ie9 .i-chart:hover:before
-{
-  background-position: -48px -48px;
-}
-
-.i-close:before
-{
-  width: .92857em;
-  height: .92857em;
-  background-position: -4.57143em -4.57143em;
-  float: left;
-}
-
-.lt-ie9 .i-close:before
-{
-  width: 12px;
-  height: 12px;
-  background-position: -64px -64px;
-}
-
-.i-close:hover:before
-{
-  width: .92857em;
-  height: .92857em;
-  background-position: -4.57143em -4.57143em;
-}
-
-.lt-ie9 .i-close:hover:before
-{
-  width: 12px;
-  height: 12px;
-  background-position: -64px -64px;
 }
