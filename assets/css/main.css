@@ -1387,8 +1387,8 @@ code
   position: absolute;
   left: 0;
   right: 0;
-  top: 200px;
-  width: 700px;
+  top: 250px;
+  width: 728px;
   margin: auto;
   color: #fcfbf7;
   z-index: 9;
@@ -2432,4 +2432,18 @@ code
   top: 0;
   box-shadow: 0 8px 0 0 #fcfbf7;
   transform: translate(18%,0)rotate(45deg);
+}
+
+/* Troy's custom bits */
+#ad3
+{
+    height: 90px;
+    width: 728px;
+    margin: 100px auto;
+    background-color: #cec9c4;
+}
+
+#ad3 iframe
+{
+    padding: 0;
 }
