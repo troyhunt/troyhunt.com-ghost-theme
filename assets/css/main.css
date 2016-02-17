@@ -59,7 +59,7 @@ caption, td, th
   vertical-align: middle;
 }
 
-.caption, .header_logo, blockquote > p
+.caption, blockquote > p
 {
   text-align: center;
 }
@@ -246,26 +246,13 @@ img + figcaption, p
 h1
 {
   margin-bottom: 1.84615rem;
-  font-size: 3.692em;
+  font-size: 3.385em;
 }
 
 h2
 {
   margin-bottom: 1.47692rem;
   font-size: 2.923em;
-}
-
-@media (min-width:45.0625em)and (max-width:90em)
-{
-  h1
-  {
-    font-size: 3.385em;
-  }
-
-  h2
-  {
-    font-size: 2.862em;
-  }
 }
 
 h3
@@ -429,7 +416,7 @@ pre
   overflow: hidden;
 }
 
-.article .post_info, .article_readNext_story .post:before, .footer_logo, .header_logo_name, .post_info
+.article .post_info, .article_readNext_story .post:before, .footer_logo, .post_info
 {
   font-family: "PT Sans",Georgia,Times,serif;
 }
@@ -1004,13 +991,7 @@ code
   background-color: rgba(0,0,0,.4);
 }
 
-.header_logo
-{
-  width: 350px;
-  margin: 0 auto;
-}
-
-.footer_logo, .header_logo_name
+.footer_logo
 {
   font-size: 2.308em;
   font-weight: 700;
@@ -1020,33 +1001,10 @@ code
 
 @media (min-width:0)and (max-width:45em)
 {
-  .header_logo
-  {
-    width: 80%;
-    margin: 0 21%;
-    text-align: right;
-  }
-
-  .header_block
-  {
-    background-color: transparent;
-    border: none;
-  }
-
-  .footer_logo, .header_logo_name
+  .footer_logo
   {
     font-size: 2em;
   }
-}
-
-.header_logo_shortInfo
-{
-  margin-top: .92308rem;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 1.077em;
-  font-style: italic;
-  color: #eeedea;
 }
 
 .footer_socialIcons, .header_socialIcons
@@ -1062,10 +1020,10 @@ code
   {
     display: none;
   }
-  
+
   .header_navMenu
   {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -1075,21 +1033,21 @@ code
   border-color: rgba(64,61,52,.3);
 }
 
-.no-cover .footer_logo, .no-cover .header_logo_name
+.no-cover .footer_logo, .no-cover
 {
   color: #403d34;
 }
 
-.no-cover .header_logo_shortInfo
+.no-cover
 {
   color: #595352;
 }
 
-.no-cover .header_navMenu_button
-{
-  border-color: rgba(64,61,52,.3);
-  color: #595352;
-}
+  .no-cover .header_navMenu_button
+  {
+    border-color: rgba(64,61,52,.3);
+    color: #595352;
+  }
 
 .show-menu .no-cover .header_navMenu_button
 {
@@ -1104,14 +1062,9 @@ code
 
 @media (min-width:0)and (max-width:45em)
 {
-  .show-menu .no-cover .footer_logo, .show-menu .no-cover .header_logo_name
+  .show-menu .no-cover .footer_logo
   {
     color: #fcfbf7;
-  }
-
-  .show-menu .no-cover .header_logo_shortInfo
-  {
-    color: #cec9c4;
   }
 
   .show-menu .header_navMenu_button
@@ -1180,12 +1133,8 @@ code
 .header_navMenu_button
 {
   position: absolute;
-  top: 26px;
+  top: 16px;
   left: 0;
-  padding: 10px 13px 46px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 1px solid rgba(252,251,247,.2);
   background: 0 0;
 }
 
@@ -1288,6 +1237,11 @@ code
     overflow: hidden;
   }
 
+.article-open
+{
+  height: auto;
+}
+
 .article_content
 {
   padding-top: 7.38462rem;
@@ -1317,6 +1271,12 @@ code
   {
     height: 180px;
   }
+
+
+    .article-open.no-cover, .article_feature_first-img.no-cover, .profile.no-cover
+    {
+      height: auto;
+    }
 
   .article_content
   {
@@ -1388,27 +1348,29 @@ code
   left: 0;
   right: 0;
   top: 250px;
-  width: 728px;
   margin: auto;
   color: #fcfbf7;
   z-index: 9;
 }
 
-@media (min-width:0)and (max-width:45em)
+.no-cover .article-open_item
 {
-  .article-open_item, .article_item_first, .profile_item, .tags_item
-  {
-    width: 90%;
-    bottom: 60px;
-    top: 70px;
-  }
+  position: relative;
+  top: auto;
+  margin-top: 50px;
 }
 
-@media (min-width:25.0625em)and (max-width:45em)
+@media (min-width:0)and (max-width:45em)
 {
+  .no-cover .article-open_item
+  {
+    margin-top: 75px;
+  }
+
   .article-open_item, .article_item_first, .profile_item, .tags_item
   {
-    top: 60px;
+    bottom: 60px;
+    top: 70px;
   }
 }
 
@@ -1752,7 +1714,6 @@ code
 
 .article-open, .profile
 {
-  height: 570px;
   background-repeat: no-repeat;
   background-position: 100% 20%;
   background-size: cover;
@@ -1950,11 +1911,6 @@ code
   }
 }
 
-.no-cover.article-open, .no-cover.profile
-{
-  height: 400px;
-}
-
 .no-cover .article-open_item, .no-cover .profile_item, .no-cover .tags_item
 {
   bottom: 0;
@@ -2022,13 +1978,13 @@ code
   margin-right: 20px;
 }
 
-.pagination_prev.fa, .pagination_next.fa
-{
-  margin-top: 6px;
-  border: none;
-  color: #cec9c4;
-  font-size: 1.5em;
-}
+  .pagination_prev.fa, .pagination_next.fa
+  {
+    margin-top: 6px;
+    border: none;
+    color: #cec9c4;
+    font-size: 1.5em;
+  }
 
 .pagination_pages
 {
@@ -2138,11 +2094,11 @@ code
   margin-right: 30px;
 }
 
-.profile_meta.fa
-{
-  margin-right: 5px;
-  color: #d8d2cc;
-}
+  .profile_meta.fa
+  {
+    margin-right: 5px;
+    color: #d8d2cc;
+  }
 
 @media (min-width:25.0625em)and (max-width:45em)
 {
@@ -2374,6 +2330,12 @@ code
 
 @media (min-width:0)and (max-width:45em)
 {
+  .header
+  {
+    padding: 0;
+    height: 64px;
+  }
+
   .i-menu
   {
     display: block;
@@ -2437,13 +2399,29 @@ code
 /* Troy's custom bits */
 #ad3
 {
-    height: 90px;
-    width: 728px;
-    margin: 100px auto;
-    background-color: #cec9c4;
+  height: 90px;
+  width: 728px;
+  max-width: 100%;
+  margin: 100px auto 0 auto;
+  background-color: #cec9c4;
+  display: block;
 }
 
-#ad3 iframe
-{
+  #ad3 iframe
+  {
     padding: 0;
+  }
+
+/* Banner ad has to go when the page is too narrow */
+@media (min-width:0)and (max-width:60em)
+{
+  #ad3
+  {
+    display: none;
+  }
+
+  .no-cover .article-open_item
+  {
+    margin-top: 110px;
+  }
 }
