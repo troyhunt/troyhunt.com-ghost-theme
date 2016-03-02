@@ -1357,20 +1357,20 @@ code
 {
   position: relative;
   top: auto;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 @media (min-width:0)and (max-width:45em)
 {
   .no-cover .article-open_item
   {
-    margin-top: 75px;
+    margin-top: 175px;
   }
 
   .article-open_item, .article_item_first, .profile_item, .tags_item
   {
     bottom: 60px;
-    top: 70px;
+    top: 170px;
   }
 }
 
