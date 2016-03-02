@@ -29,15 +29,15 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-   
+
     {{! Everything else gets inserted here }}
 
     <div id="container">
-    {{{body}}}
+        {{{body}}}        
     </div>
 
     {{! Footer }}
-    <footer id="footer">    
+    <footer id="footer">
     {{! Footer - Subscription }}
     {{> footer-subscription-block}}
 
@@ -56,7 +56,7 @@
         </div>
     </div>
     </footer>
-    
+
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
@@ -73,7 +73,7 @@
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
     </script>
-    
+
 </body>
 
 </html>

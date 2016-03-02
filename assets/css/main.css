@@ -410,6 +410,61 @@ pre
   line-height: 1.2em;
 }
 
+/* Sidebar stuff begin: */
+
+.main-wrapper {
+    position: relative;
+}
+
+.content-wrapper {
+    padding-right: 350px;
+}
+
+.content-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    padding: 50px 50px 50px 0;
+    font-family: "PT Sans",Georgia,Times,serif;
+}
+
+/* hide sidebar on non-desktop devices */
+@media (max-width: 1200px) {
+    .content-wrapper {padding:0;}
+    .content-sidebar {display:none;}
+}
+
+.content-sidebar .widget {
+    margin-bottom: 40px;
+}
+
+.content-sidebar a {
+    color: #ccb285;
+    text-decoration: underline;
+}
+
+.sidebar-featured-header {
+    margin-bottom: 15px;
+}
+
+.sidebar-featured-item a {
+    display: block;
+    border-top: #eeedea 1px solid;
+    padding: 15px 0;
+    color: #403d34;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.15em;
+    font-weight: bold;
+}
+.sidebar-featured-item a:hover {
+    color: #ccb285;
+}
+
+/* Sidebar stuff end. */
+
+
 .article_readNext:after, .article_readNext:before, .container:after, .container:before, .wrap:after, .wrap:before
 {
   content: "\0020";
@@ -662,8 +717,6 @@ code
   zoom: 1;
   float: none;
   display: block;
-  padding-right: 10%;
-  padding-left: 10%;
   margin: 0;
   z-index: 0;
 }
@@ -995,6 +1048,8 @@ code
   border-bottom: 1px solid rgba(252,251,247,.2);
   z-index: 99;
   background-color: rgba(0,0,0,.4);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footer_logo
@@ -1219,7 +1274,7 @@ code
 .article
 {
   border-bottom: 1px solid #cec9c4;
-  max-width: 1000px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -1748,7 +1803,7 @@ code
   padding-top: 4.61538rem;
   padding-bottom: 7.38462rem;
   border-bottom: 1px solid #cec9c4;
-  max-width: 1000px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -2143,9 +2198,16 @@ code
   }
 }
 
+.footer_informations_block {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .footer_subscription_block
 {
   background-color: #2f2d26;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footer_info_block, .footer_informations_block
@@ -2156,6 +2218,8 @@ code
 .footer_info_block
 {
   border-top: 1px solid #322f29;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footer_information, .footer_subscription_formGroup

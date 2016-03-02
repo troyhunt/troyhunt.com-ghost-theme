@@ -1,0 +1,18 @@
+<div class="content-sidebar">
+
+    <img class="widget" src="https://cloud.githubusercontent.com/assets/120485/13454299/18aea968-e091-11e5-84bb-40146d195dec.png" />
+
+    <div class="widget sidebar-featured">
+        <h4 class="sidebar-featured-header">Must Read</h4>
+        {{#get "posts" limit="all" filter="featured:true"}}
+            {{#foreach posts}}
+                <div class="sidebar-featured-item">
+                    <a href="{{url}}">{{title}}</a>
+                </div>
+            {{/foreach}}
+        {{else}}
+            {{#if @error}}{{@error}}{{/if}}
+        {{/get}}
+    </div>
+
+</div>
