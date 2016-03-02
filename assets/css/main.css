@@ -435,6 +435,7 @@ code
   padding: 3px 5px;
   background: #eeedea;
   border: 1px solid #cec9c4;
+  white-space: nowrap;
 }
 
 .article .article_text > p:first-child:first-letter
