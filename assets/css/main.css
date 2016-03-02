@@ -1729,6 +1729,8 @@ code
   padding-top: 4.61538rem;
   padding-bottom: 7.38462rem;
   border-bottom: 1px solid #cec9c4;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .article-open_author, .article-open_shere
