@@ -333,7 +333,7 @@ i
 
 hr
 {
-  margin-bottom: 1.84615rem;
+  margin: 4rem 0 5.5rem;
   border: 1px solid #eeedea;
 }
 
@@ -463,7 +463,7 @@ code
 
 .article_text > p
 {
-  padding-bottom: .92308rem;
+  padding-bottom: 1.92308rem;
   font-size: 1.3em;
   line-height: 1.7em;
   color: #595352;
