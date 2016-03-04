@@ -11,7 +11,6 @@
 {{> header}}
 
 <div class="article-open container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <div id="ad3" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="728x90"></div>
     <div class="hover"></div>
     <article class="article-open_item wrap">
         <header class="post_head">
@@ -27,6 +26,9 @@
             {{/if}}
     </article>
 </div>
+
+<div class="main-wrapper">
+<div class="content-wrapper">
 
 <main class="article-open_content container">
     <article class="wrap">
@@ -81,9 +83,13 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
         </footer>
-        </div>
     </article>
 </main>
+
+</div>{{!.content-wrapper}}
+{{> sidebar}}
+</div>{{!.main-wrapper}}
+
 <aside class="article_readNext">
     {{#next_post}}
     <a class="article_readNext_story col-2 {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
@@ -93,8 +99,8 @@
     </a>
     {{else}}
     <a class="article_readNext_story col-2 no-cover">
-        <section class="no-post">
-            <h4>No more next posts!</h4>
+        <section class="post">
+            <h4>Psych! This is the latest post.</h4>
         </section>
     </a>
     {{/next_post}}

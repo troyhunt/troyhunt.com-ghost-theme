@@ -14,14 +14,19 @@
             {{#if tag.description}}
                 	<p>{{tag.description}}</p>
                 {{else}}
-                	<p>A {{pagination.total}}-post collection</p>	
+                	<p>A {{pagination.total}}-post collection</p>
                 {{/if}}
         </section>
     </article>
 </div>
 
 {{! The tag below includes the post loop - partials/loop.hbs }}
-{{> "loop"}}
+<div class="main-wrapper">
+    <div class="content-wrapper">
+        {{> "loop"}}
+    </div>
+    {{> sidebar}}
+</div>
 
 
 {{! Previous/next page links - displayed on every page }}
