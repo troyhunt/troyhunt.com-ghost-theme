@@ -1372,42 +1372,6 @@ code
   }
 }
 
-.article.featured
-{
-  padding-top: 7.38462rem;
-  padding-bottom: 6.46154rem;
-}
-
-  .article.featured .article_content
-  {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
-    background-size: cover;
-  }
-
-    .article.featured .article_content .tag
-    {
-      color: #fcfbf7;
-      border: 1px solid rgba(252,251,247,.5);
-      background-color: transparent;
-    }
-
-  .article.featured .post_title a
-  {
-    color: #fcfbf7;
-  }
-
-  .article.featured .post_info
-  {
-    color: #cec9c4;
-  }
-
-  .article.featured .post_head
-  {
-    padding: 0;
-  }
-
 .article-open_item, .article_item_first, .profile_item, .tags_item
 {
   position: absolute;
