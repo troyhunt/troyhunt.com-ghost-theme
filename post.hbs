@@ -10,6 +10,17 @@
 {{! Header transparent}}
 {{> header}}
 
+
+
+<div class="post_header container">
+
+</div>
+
+
+
+<div class="main-wrapper">
+<div class="content-wrapper">
+
 <div class="article-open container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <div class="hover"></div>
     <article class="article-open_item wrap">
@@ -39,18 +50,8 @@
             </div>
             <span class="post_info">{{date format="DD MMMM YYYY"}}</span>
         </header>
-        {{#if tags}}
-            <footer class="post_tag">
-                {{#foreach tags}}
-                    <a class="tag" href="{{url}}">{{name}}</a>
-                {{/foreach}}
-            </footer>
-        {{/if}}
     </article>
 </div>
-
-<div class="main-wrapper">
-<div class="content-wrapper">
 
 <main class="article-open_content container">
     <article class="wrap">
