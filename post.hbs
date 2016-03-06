@@ -15,15 +15,37 @@
     <article class="article-open_item wrap">
         <header class="post_head">
             <h1>{{{title}}}</h1>
+            <div class="post_socialIcons">
+                <ul>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-twitter" href="http://twitter.com/share?url={{url absolute="true"}}&text={{encode title}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-reddit-alien" href="http://reddit.com/submit?url={{url absolute="true"}}&title={{encode title}}" onclick="window.open(this.href, 'facebook-share','width=580,height=550');return false;"></a>
+                    </li>
+                    <li class="socialIcons_link">
+                        <a class="fa fa-envelope" href="mailto:?subject={{encode title}}&amp;body={{url absolute="true"}}"></a>
+                    </li>
+                </ul>         
+            </div>
             <span class="post_info">{{date format="DD MMMM YYYY"}}</span>
         </header>
-            {{#if tags}}
-        <footer class="post_tag">
+        {{#if tags}}
+            <footer class="post_tag">
                 {{#foreach tags}}
-                <a class="tag" href="{{url}}">{{name}}</a>
+                    <a class="tag" href="{{url}}">{{name}}</a>
                 {{/foreach}}
-        </footer>
-            {{/if}}
+            </footer>
+        {{/if}}
     </article>
 </div>
 

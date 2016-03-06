@@ -1068,6 +1068,30 @@ code
   }
 }
 
+@media (min-width:0)and (max-width:25em)
+{
+    .post_socialIcons, .article-open_shere
+    {
+        display: none;
+    }
+}
+
+.post_socialIcons
+{
+  margin-bottom: 1.84615rem;
+}
+
+    .post_socialIcons .fa
+    {
+      font-size: 1em;
+    }
+    
+    .post_socialIcons .socialIcons_link
+    {
+      width: 30px;
+      height: 30px;  
+    }
+
 .footer_socialIcons, .header_socialIcons
 {
   position: absolute;
