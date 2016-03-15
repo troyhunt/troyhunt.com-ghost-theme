@@ -424,6 +424,7 @@ pre
   background-color: rgba(239, 237, 231, 0.46);
   height: 100%;
   font-size: 1.2em;
+  border-left: 1px solid #cec9c4;
 }
 
   .content-sidebar h4
@@ -431,9 +432,10 @@ pre
     font-size: 1.8em;
   }
 
-  .content-sidebar .fa
+  .content-sidebar .fa, .article-open_author_bio .fa
   {
     text-decoration: none;
+    border-bottom: none;
   }
 
   .content-sidebar hr
@@ -1527,6 +1529,7 @@ code
   float: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid #cec9c4;
 }
 
   .article_readNext .no-post, .article_readNext_story .post
@@ -1839,7 +1842,6 @@ code
 {
   padding-top: 4.61538rem;
   padding-bottom: 7.38462rem;
-  border-bottom: 1px solid #cec9c4;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1855,7 +1857,7 @@ code
   border-bottom: 2px solid #eeedea;
 }
 
-.article-open_content iframe
+.article_text iframe
 {
   padding-bottom: 1.92308rem;
 }
@@ -2541,7 +2543,7 @@ code
   height: 90px;
   width: 728px;
   max-width: 100%;
-  margin: 0 auto 80px auto;
+  margin: 30px auto 0 auto;
   background-color: #cec9c4;
   display: block;
 }
@@ -2550,8 +2552,6 @@ code
   {
     padding: 0;
   }
-
-
 
 /* Banner ad has to go when the page is too narrow */
 @media (min-width:0)and (max-width:60em)
