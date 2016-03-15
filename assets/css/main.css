@@ -150,18 +150,9 @@ address
     border-bottom: 2px solid #847b79;
   }
 
-blockquote, iframe, object, p
+blockquote, object, p
 {
   padding-bottom: 1.84615rem;
-}
-
-iframe, object
-{
-  padding-top: .92308rem;
-  max-width: 100%;
-  max-height: 500px;
-  width: 100%;
-  border: 0;
 }
 
 #container
@@ -412,55 +403,96 @@ pre
 
 /* Sidebar stuff begin: */
 
-.main-wrapper {
-    position: relative;
+.main-wrapper
+{
+  position: relative;
 }
 
-.content-wrapper {
-    padding-right: 350px;
+.content-wrapper
+{
+  padding-right: 400px;
 }
 
-.content-sidebar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 350px;
-    padding: 50px 50px 50px 0;
-    font-family: "PT Sans",Georgia,Times,serif;
+.content-sidebar
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  padding: 50px;
+  font-family: "PT Sans",Georgia,Times,serif;
+  background-color: rgba(239, 237, 231, 0.46);
+  height: 100%;
+  font-size: 1.2em;
 }
+
+  .content-sidebar h4
+  {
+    font-size: 1.8em;
+  }
+
+  .content-sidebar .fa
+  {
+    text-decoration: none;
+  }
+
+  .content-sidebar hr
+  {
+    margin: 0.75rem 0 2.3rem;
+  }
+
+  .content-sidebar li
+  {
+    line-height: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  .content-sidebar ol, .content-sidebar ul
+  {
+    padding-bottom: 1.6rem;
+  }
 
 /* hide sidebar on non-desktop devices */
-@media (max-width: 1200px) {
-    .content-wrapper {padding:0;}
-    .content-sidebar {display:none;}
+@media (max-width: 1200px)
+{
+  .content-wrapper
+  {
+    padding: 0;
+  }
+
+  .content-sidebar
+  {
+    display: none;
+  }
 }
 
-.content-sidebar .widget {
-    margin-bottom: 40px;
+.content-sidebar a
+{
+  color: #ccb285;
+  text-decoration: underline;
 }
 
-.content-sidebar a {
+.sidebar-featured-header
+{
+  margin-bottom: 15px;
+}
+
+.sidebar-featured-item a
+{
+  display: block;
+  border-top: #eeedea 1px solid;
+  padding: 15px 0;
+  color: #403d34;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.15em;
+  font-weight: bold;
+}
+
+  .sidebar-featured-item a:hover
+  {
     color: #ccb285;
-    text-decoration: underline;
-}
-
-.sidebar-featured-header {
-    margin-bottom: 15px;
-}
-
-.sidebar-featured-item a {
-    display: block;
-    border-top: #eeedea 1px solid;
-    padding: 15px 0;
-    color: #403d34;
-    text-decoration: none;
-    font-size: 1.4rem;
-    line-height: 1.15em;
-    font-weight: bold;
-}
-.sidebar-featured-item a:hover {
-    color: #ccb285;
-}
+  }
 
 /* Sidebar stuff end. */
 
@@ -516,9 +548,10 @@ code
   font-weight: 600;
 }
 
-.article_text a {
-    color: #ccb285;
-    border-bottom: 1px solid;
+.article_text a
+{
+  color: #ccb285;
+  border-bottom: 1px solid;
 }
 
 .article_text > p
@@ -559,6 +592,7 @@ code
   .article_text p > a.article_link-more, .article_text p > a.imageLink
   {
     border: none;
+    text-decoration: none !important;
   }
 
 .button-load, .caption
@@ -1066,10 +1100,10 @@ code
 
 @media (min-width:0)and (max-width:25em)
 {
-    .post_socialIcons, .article-open_shere
-    {
-        display: none;
-    }
+  .post_socialIcons, .article-open_shere
+  {
+    display: none;
+  }
 }
 
 .post_socialIcons
@@ -1077,16 +1111,16 @@ code
   margin-bottom: 1.84615rem;
 }
 
-    .post_socialIcons .fa
-    {
-      font-size: 1em;
-    }
-    
-    .post_socialIcons .socialIcons_link
-    {
-      width: 30px;
-      height: 30px;  
-    }
+  .post_socialIcons .fa
+  {
+    font-size: 1em;
+  }
+
+  .post_socialIcons .socialIcons_link
+  {
+    width: 30px;
+    height: 30px;
+  }
 
 .footer_socialIcons, .header_socialIcons
 {
@@ -1299,20 +1333,20 @@ code
 
 .post_header
 {
-    background-image: url(/assets/img/page-banner.jpg);
-    background-size: 795px 200px;
-    background-repeat: no-repeat;
-    background-color: #000000;
-    background-position: 50% 0%;
-    height: 200px;
+  background-image: url(/assets/img/page-banner.jpg);
+  background-size: 795px 200px;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: 50% 0%;
+  height: 200px;
 }
 
 @media (min-width:0)and (max-width:45em)
 {
-    .post_header
-    {
-        display: none;
-    }
+  .post_header
+  {
+    display: none;
+  }
 }
 
 .article-open, .article_feature_first-img, .profile
@@ -1341,9 +1375,10 @@ code
   height: 500px;
 }
 
-.article-open.no-cover {
+  .article-open.no-cover
+  {
     height: auto;
-}
+  }
 
 .article_content
 {
@@ -1423,7 +1458,7 @@ code
 {
   position: relative;
   top: auto;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 @media (min-width:0)and (max-width:45em)
@@ -1700,12 +1735,14 @@ code
   font-size: 1.231em;
   line-height: 1.7em;
 }
-.post_text.blog_description {
-  font-size: 1.8em;
-  line-height: 1.5em;
-  max-width: 75%;
-  margin: 0 auto;
-}
+
+  .post_text.blog_description
+  {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    max-width: 75%;
+    margin: 0 auto;
+  }
 
 @media (min-width:65.0625em)and (max-width:90em)
 {
@@ -2198,9 +2235,10 @@ code
   }
 }
 
-.footer_informations_block {
-    padding-left: 10%;
-    padding-right: 10%;
+.footer_informations_block
+{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .footer_subscription_block
@@ -2482,12 +2520,23 @@ code
 }
 
 /* Troy's custom bits */
+
+#ad1
+{
+  margin: 18px 0 38px;
+}
+
+#ad2 div
+{
+  margin: 0 auto;
+}
+
 #ad3
 {
   height: 90px;
   width: 728px;
   max-width: 100%;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 80px auto;
   background-color: #cec9c4;
   display: block;
 }
@@ -2496,6 +2545,8 @@ code
   {
     padding: 0;
   }
+
+
 
 /* Banner ad has to go when the page is too narrow */
 @media (min-width:0)and (max-width:60em)

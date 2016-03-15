@@ -1,18 +1,60 @@
 <div class="content-sidebar">
 
-    <img class="widget" src="https://cloud.githubusercontent.com/assets/120485/13454299/18aea968-e091-11e5-84bb-40146d195dec.png" />
+    {{#is "home"}}
+    {{else}}
+        <div class="widget sidebar-featured">
+            <h4 class="sidebar-featured-header">Troy Hunt</h4>
+            <p>{{@blog.description}} <a href="/about" class="article_link-more fa fa-long-arrow-right"></a></p>
+        </div>
+        
+        <hr/>
+    {{/is}}
+    
+    <div class="widget sidebar-featured">
+        <h4 class="sidebar-featured-header">Upcoming Events</h4>
+        <p>Check out 2016 events for a full list</p>
+        <ol>
+            <li>May: Belgium and Spain</li>
+            <li>Jun: Norway and UK</li>
+            <li>Nov: USA</li>
+        </ol>
+    </div>
+    
+    <hr/>
+    
+    <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
+        
+    <hr/>
 
     <div class="widget sidebar-featured">
         <h4 class="sidebar-featured-header">Must Read</h4>
         {{#get "posts" limit="all" filter="featured:true"}}
+            <ul>
             {{#foreach posts}}
-                <div class="sidebar-featured-item">
-                    <a href="{{url}}">{{title}}</a>
-                </div>
+                <li><a href="{{url}}">{{title}}</a></li>
             {{/foreach}}
+            </ul>
         {{else}}
             {{#if @error}}{{@error}}{{/if}}
         {{/get}}
     </div>
+    
+    <hr/>
+    
+    <div class="widget sidebar-featured">
+        <h4 class="sidebar-featured-header">Top Pluralsight Courses</h4>
+        <p>I've got <a href="http://app.pluralsight.com/author/troy-hunt">more than 20 online courses with Pluralsight</a>, here's five of the best:</p>
+        <ol>
+            <li><a href="https://app.pluralsight.com/library/courses/owasp-top10-aspdotnet-application-security-risks/table-of-contents">OWASP Top 10 Web Application Security Risks for ASP.NET</a></li>
+            <li><a href="https://app.pluralsight.com/library/courses/hack-yourself-first">Hack Yourself First: How to go on the Cyber-Offense</a></li>
+            <li><a href="https://app.pluralsight.com/library/courses/ethical-hacking-social-engineering/table-of-contents">Ethical Hacking: Social Engineering</a></li>
+            <li><a href="https://app.pluralsight.com/library/courses/modernizing-websites-microsoft-azure/table-of-contents">Modernizing Your Websites with Azure Platform as a Service</a></li>
+            <li><a href="http://app.pluralsight.com/courses/browser-security-headers">Introduction to Browser Security Headers</a></li>
+        </ol>
+    </div>
+    
+    <hr/>
+    
+    <div id="ad2" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="160x600"></div>
 
 </div>
