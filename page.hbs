@@ -9,14 +9,14 @@
 {{! Header transparent}}
 {{> header}}
 
-<div class="pages container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<div class="article_feature_first-img container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <div class="hover"></div>
-    <article class="article-open_item wrap">
+    <article class="article_item_first wrap hover container">
         <header class="post_head">
-            <h1>{{{title}}}</h1>       
+            <h1>{{title}}</h1>
         </header>
         <section>
-            <p class="post_text" itemprop="description">{{meta_description}}</p>
+            <p class="blog_description post_text" itemprop="description">{{meta_description}}</p>
         </section>
     </article>
 </div>
@@ -25,8 +25,15 @@
     <article class="wrap">
         <section class="article_text post">
             {{content}}
+            <div id="ad3" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="728x90"></div>
         </section>
         </div>
     </article>
 </main>
+
+</div>{{!.content-wrapper}}
+{{> sidebar}}
+</div>{{!.main-wrapper}}
+
+
 {{/post}}

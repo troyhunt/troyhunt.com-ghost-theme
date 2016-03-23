@@ -410,7 +410,7 @@ pre
 
 .content-wrapper
 {
-  padding-right: 400px;
+  padding: 0 400px 40px 0;
 }
 
 .content-sidebar
@@ -1364,6 +1364,11 @@ code
   background-size: cover;
 }
 
+.article_feature_first-img
+{
+  background-color: #000000;
+}
+
   .article-open:after, .article-open:before, .article_feature_first-img:after, .article_feature_first-img:before, .profile:after, .profile:before
   {
     content: "\0020";
@@ -1410,7 +1415,6 @@ code
   {
     height: 180px;
   }
-
 
     .article-open.no-cover, .article_feature_first-img.no-cover, .profile.no-cover
     {
@@ -2071,6 +2075,7 @@ code
   padding-bottom: 1.84615rem;
   background-color: #eeedea;
   border-bottom: 1px solid #cec9c4;
+  border-top: 1px solid #cec9c4;
 }
 
 .pagination_next, .pagination_prev
@@ -2126,6 +2131,7 @@ code
 .extra-pagination
 {
   display: none;
+  padding-top: 67px;
 }
 
 .archive-template .extra-pagination
