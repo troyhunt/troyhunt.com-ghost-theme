@@ -1387,9 +1387,10 @@ code
     height: auto;
   }
 
-.article_content
+.article_content, .page article.article
 {
   padding-top: 6rem;
+  
 }
 
   .article_content .post_tag
