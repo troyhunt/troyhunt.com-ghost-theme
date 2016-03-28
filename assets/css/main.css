@@ -50,6 +50,7 @@ table
 {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 1.92308rem;
 }
 
 caption, td, th
@@ -555,13 +556,18 @@ code
   border-bottom: 1px solid;
 }
 
-.article_text > p
+.article_text > p, .article_text > div p, th, td
 {
   padding-bottom: 1.92308rem;
   font-size: 1.3em;
   line-height: 1.7em;
   color: #595352;
 }
+
+ th, td{
+     padding: 0.7rem;
+     border-bottom: 1px solid #CCC;
+ }
 
 @media (min-width:25.0625em)and (max-width:45em)
 {
@@ -603,7 +609,7 @@ code
 
 .article_text ol, .article_text ul
 {
-  padding-bottom: .92308rem;
+  padding-bottom: 1.92308rem;
   padding-left: 40px;
   color: #595352;
 }
@@ -1388,8 +1394,8 @@ code
 
 .article_content, .page article.article
 {
-  padding-top: 6rem;
-  
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
   .article_content .post_tag
@@ -1454,7 +1460,7 @@ code
   position: absolute;
   left: 0;
   right: 0;
-  top: 250px;
+  top: 210px;
   margin: auto;
   color: #fcfbf7;
   z-index: 9;
@@ -1476,8 +1482,15 @@ code
 
   .article-open_item, .article_item_first, .profile_item, .tags_item
   {
-    bottom: 60px;
-    top: 170px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 25em) and (min-width: 0)
+{
+  .article-open_item, .article_item_first, .profile_item, .tags_item
+  {
+    top: 90px;
   }
 }
 
@@ -1552,7 +1565,6 @@ code
 .article_readNext_story
 {
   position: relative;
-  height: 170px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1584,13 +1596,13 @@ code
 
 .article_readNext_story:first-child .post
 {
-  margin: 1% 10% 0 25%;
+  margin: 0 10% 0 25%;
   text-align: right;
 }
 
 .article_readNext_story:last-child .post
 {
-  margin: 1% 25% 0 10%;
+  margin: 0 25% 0 10%;
   text-align: left;
 }
 
@@ -1845,7 +1857,7 @@ code
 .article-open_content
 {
   padding-top: 4.61538rem;
-  padding-bottom: 7.38462rem;
+  padding-bottom: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1919,8 +1931,7 @@ code
 
 .article-open_author
 {
-  padding-top: 1.84615rem;
-  padding-bottom: 1.84615rem;
+  padding: 1.84615rem 0;
   display: inline-block;
   width: 100%;
 }
@@ -2559,16 +2570,16 @@ code
     padding: 0;
   }
 
+#disqus_thread
+{
+    padding-top: 1.84615rem;
+}
+
 /* Banner ad has to go when the page is too narrow */
-@media (min-width:0)and (max-width:60em)
+@media (min-width:0)and (max-width:50em)
 {
   #ad3
   {
     display: none;
-  }
-
-  .no-cover .article-open_item
-  {
-    margin-top: 110px;
   }
 }
