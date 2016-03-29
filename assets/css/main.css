@@ -2474,7 +2474,7 @@ th, td
 }
 
 /* Banner ad has to go when the page is too narrow */
-@media (min-width:0)and (max-width:50em)
+@media (min-width:0)and (max-width:53em)
 {
   #ad3
   {
