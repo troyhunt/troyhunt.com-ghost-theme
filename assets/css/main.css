@@ -505,7 +505,7 @@ pre
   overflow: hidden;
 }
 
-.article .post_info, .article_readNext_story .post:before, .footer_logo, .post_info
+.article .post_info, .article_readNext_story .post:before, .post_info
 {
   font-family: "PT Sans",Georgia,Times,serif;
 }
@@ -1089,22 +1089,6 @@ code
   padding-right: 10%;
 }
 
-.footer_logo
-{
-  font-size: 2.308em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fcfbf7;
-}
-
-@media (min-width:0)and (max-width:45em)
-{
-  .footer_logo
-  {
-    font-size: 2em;
-  }
-}
-
 @media (min-width:0)and (max-width:25em)
 {
   .post_socialIcons, .article-open_shere
@@ -1129,7 +1113,7 @@ code
     height: 30px;
   }
 
-.footer_socialIcons, .header_socialIcons
+.header_socialIcons
 {
   position: absolute;
   top: 26%;
@@ -1138,7 +1122,7 @@ code
 
 @media (min-width:0)and (max-width:65em)
 {
-  .footer_socialIcons, .header_socialIcons
+  .header_socialIcons
   {
     display: none;
   }
@@ -1155,7 +1139,7 @@ code
   border-color: rgba(64,61,52,.3);
 }
 
-.no-cover .footer_logo, .no-cover
+.no-cover, .no-cover
 {
   color: #403d34;
 }
@@ -1184,7 +1168,7 @@ code
 
 @media (min-width:0)and (max-width:45em)
 {
-  .show-menu .no-cover .footer_logo
+  .show-menu .no-cover
   {
     color: #fcfbf7;
   }
@@ -2284,88 +2268,37 @@ code
   padding-right: 10%;
 }
 
-.footer_information, .footer_subscription_formGroup
+.footer_subscription_formGroup
 {
-  padding-top: 7.38462rem;
-  padding-bottom: 7.38462rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: inline-block;
   width: 100%;
-}
-
-.footer_subscription_name
-{
-  display: inline-block;
-  margin-right: 40px;
-  font-style: italic;
   color: #fcfbf7;
+  font-size: 1.8em;
 }
 
-  .footer_subscription_name h4
-  {
-    margin: 0;
-  }
-
-@media (min-width:45.0625em)and (max-width:65em)
+.footer_subscription_formGroup h4
 {
-  .footer_subscription_name
+  font-style: italic;
+  color: #ccb285;
+  margin-bottom: 1rem;
+}
+
+  
+    .footer_subscription_formGroup p
   {
-    width: 25%;
+    padding: 0;
   }
-}
-
-.footer_subscription_email
-{
-  width: 370px;
-}
-
-@media (min-width:45.0625em)and (max-width:65em)
-{
-  .footer_subscription_email
-  {
-    width: 40%;
-  }
-}
-
-@media (min-width:0)and (max-width:45em)
-{
-  .footer_subscription_name
-  {
-    margin: 0 0 40px;
-  }
-
-  .footer_subscription_email
-  {
-    width: 100%;
-  }
-}
-
-.footer_subscription_send
-{
-  margin-left: 20px;
-}
-
-@media (min-width:45.0625em)and (max-width:65em)
-{
-  .footer_subscription_send
-  {
-    width: 20%;
-  }
-}
-
-@media (min-width:0)and (max-width:45em)
-{
-  .footer_subscription_send
-  {
-    display: block;
-    width: 100%;
-    margin: 20px 0 0;
-  }
-}
+  
+   .footer_subscription_formGroup img{
+  width: 57px;
+   }
 
 .footer_informations
 {
-  padding-top: 7.38462rem;
-  padding-bottom: 7.38462rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
   .footer_informations p
@@ -2374,22 +2307,21 @@ code
     color: #cec9c4;
   }
 
-  .footer_informations .button, .footer_informations .button-load, .footer_informations .navMenu_link, .footer_informations h6, .footer_logo
+  .footer_informations .button, .footer_informations .button-load, .footer_informations .navMenu_link, .footer_informations h6
   {
     color: #ccb285;
   }
 
-.footer_information-1
+@media (min-width:0)and (max-width:48em)
 {
-  padding-right: 96px;
-}
-
-@media (min-width:0)and (max-width:65em)
-{
-  .footer_information-1
+  .footer_subscription_formGroup
   {
-    padding: 0;
+    font-size: 1.3em;
   }
+  
+     .footer_subscription_formGroup img{
+  width: 46px;
+   }
 }
 
 .footer_information-2
@@ -2424,51 +2356,28 @@ code
   padding-bottom: 1.84615rem;
 }
 
-.footer_copyrightBlock
-{
-  float: left;
-  display: inline-block;
-  width: 100%;
-}
-
-.footer_logo
-{
-  display: inline;
-  font-size: 1.231em;
-}
-
-.footer_copyright
-{
-  display: inline;
-  margin: 0;
-  padding-left: 20px;
-  color: #cec9c4;
-}
-
-@media (min-width:0)and (max-width:65em)
-{
-  .footer_copyrightBlock
-  {
-    text-align: center;
-  }
-
-  .footer_copyright
-  {
-    display: block;
-    padding: 10px 0 0;
-  }
-}
-
 .footer_socialIcons
 {
   top: 27%;
   opacity: .6;
+  text-align: center;
 }
 
   .footer_socialIcons a
   {
     color: #ffffff;
   }
+  
+  .footer_socialIcons li{
+      margin: 0 8px;
+  }
+  
+  @media (min-width:0)and (max-width:25em)
+{
+    .footer_socialIcons li{
+      margin: 0 4px;
+  }
+}
 
 .i-menu
 {
