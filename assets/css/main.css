@@ -324,7 +324,6 @@ i
 
 hr
 {
-  margin: 4rem 0 1rem;
   border: 1px solid #eeedea;
 }
 
@@ -410,7 +409,7 @@ pre
 
 .content-wrapper
 {
-  padding: 0 400px 40px 0;
+  padding: 0 400px 5% 0;
 }
 
 .content-sidebar
@@ -1390,8 +1389,7 @@ th, td
 
   .article_content .post_tag
   {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding: 1rem 0;
     position: relative;
     text-align: center;
   }
@@ -1416,17 +1414,6 @@ th, td
     .article-open.no-cover, .article_feature_first-img.no-cover, .profile.no-cover
     {
       height: auto;
-    }
-
-  .article_content
-  {
-    padding-top: 3.69231rem;
-    padding-bottom: 2.76923rem;
-  }
-
-    .article_content .post_tag
-    {
-      padding-top: 1.84615rem;
     }
 }
 
@@ -2478,7 +2465,7 @@ th, td
   height: 90px;
   width: 728px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 5% auto 0 auto;
   background-color: #cec9c4;
   display: block;
 }
