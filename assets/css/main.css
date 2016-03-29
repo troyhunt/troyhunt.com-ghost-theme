@@ -564,10 +564,11 @@ code
   color: #595352;
 }
 
- th, td{
-     padding: 0.7rem;
-     border-bottom: 1px solid #CCC;
- }
+th, td
+{
+  padding: 0.7rem;
+  border-bottom: 1px solid #CCC;
+}
 
 @media (min-width:25.0625em)and (max-width:45em)
 {
@@ -1131,10 +1132,10 @@ code
   {
     text-align: center;
   }
-  
+
   .header_block
   {
-      padding: 0;
+    padding: 0;
   }
 }
 
@@ -2283,22 +2284,23 @@ code
   font-size: 1.8em;
 }
 
-.footer_subscription_formGroup h4
-{
-  font-style: italic;
-  color: #ccb285;
-  margin-bottom: 1rem;
-}
+  .footer_subscription_formGroup h4
+  {
+    font-style: italic;
+    color: #ccb285;
+    margin-bottom: 1rem;
+  }
 
-  
-    .footer_subscription_formGroup p
+
+  .footer_subscription_formGroup p
   {
     padding: 0;
   }
-  
-   .footer_subscription_formGroup img{
-  width: 57px;
-   }
+
+  .footer_subscription_formGroup img
+  {
+    width: 57px;
+  }
 
 .footer_informations
 {
@@ -2323,10 +2325,11 @@ code
   {
     font-size: 1.3em;
   }
-  
-     .footer_subscription_formGroup img{
-  width: 46px;
-   }
+
+    .footer_subscription_formGroup img
+    {
+      width: 46px;
+    }
 }
 
 .footer_information-2
@@ -2372,15 +2375,17 @@ code
   {
     color: #ffffff;
   }
-  
-  .footer_socialIcons li{
-      margin: 0 8px;
+
+  .footer_socialIcons li
+  {
+    margin: 0 8px;
   }
-  
-  @media (min-width:0)and (max-width:25em)
+
+@media (min-width:0)and (max-width:25em)
 {
-    .footer_socialIcons li{
-      margin: 0 4px;
+  .footer_socialIcons li
+  {
+    margin: 0 4px;
   }
 }
 
@@ -2486,7 +2491,7 @@ code
 
 #disqus_thread
 {
-    padding-top: 1.84615rem;
+  padding-top: 1.84615rem;
 }
 
 /* Banner ad has to go when the page is too narrow */
