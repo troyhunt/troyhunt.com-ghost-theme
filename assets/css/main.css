@@ -1131,6 +1131,11 @@ code
   {
     text-align: center;
   }
+  
+  .header_block
+  {
+      padding: 0;
+  }
 }
 
 .no-cover.header_block
