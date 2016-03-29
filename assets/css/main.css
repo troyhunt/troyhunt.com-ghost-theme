@@ -1180,7 +1180,7 @@ th, td
 
   .show-menu .header_navMenu_button
   {
-    left: 5%;
+    left: 4px;
   }
 }
 
@@ -1243,8 +1243,7 @@ th, td
 .header_navMenu_button
 {
   position: absolute;
-  top: 3px;
-  left: 0;
+  left: 3px;
   background: 0 0;
 }
 
@@ -1330,19 +1329,11 @@ th, td
 .post_header
 {
   background-image: url(/assets/img/page-banner.jpg);
-  background-size: 795px 200px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
-  background-position: 50% 0%;
-  height: 200px;
-}
-
-@media (min-width:0)and (max-width:45em)
-{
-  .post_header
-  {
-    display: none;
-  }
+  background-position: 100% 15%;
+  height: 290px;
 }
 
 .article-open, .article_feature_first-img, .profile
@@ -1354,7 +1345,7 @@ th, td
   position: relative;
   height: 500px;
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 0%;
   background-size: cover;
 }
 
@@ -1453,14 +1444,14 @@ th, td
 
 @media (min-width:0)and (max-width:45em)
 {
-  .no-cover .article-open_item
-  {
-    margin-top: 175px;
-  }
-
   .article-open_item, .article_item_first, .profile_item, .tags_item
   {
     top: 80px;
+  }
+  
+  .post_header
+  {
+      height: 200px;
   }
 }
 
@@ -1469,6 +1460,11 @@ th, td
   .article-open_item, .article_item_first, .profile_item, .tags_item
   {
     top: 90px;
+  }
+  
+  .post_header
+  {
+      height: 160px;
   }
 }
 
@@ -1960,21 +1956,22 @@ th, td
   border-radius: 100%;
 }
 
-.article-open_author_bio, .profile_meta
+.article-open_author_bio
 {
   display: table-cell;
   vertical-align: middle;
+  padding-left: 10px;
 }
 
 @media (min-width:0)and (max-width:45em)
 {
-  .article-open_author_bio, .profile_meta
+  .article-open_author_bio
   {
     padding: 0;
   }
 }
 
-.article-open_author_bio a, .profile_meta a
+.article-open_author_bio a
 {
   color: #ccb285;
   border-bottom: 1px solid;
@@ -2118,7 +2115,7 @@ th, td
   color: #847b79;
 }
 
-.profile_bio, .profile_meta, .tags_description
+.profile_bio, .tags_description
 {
   font-size: 1.231em;
 }
@@ -2192,40 +2189,6 @@ th, td
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.profile_meta
-{
-  display: inline-block;
-  margin-right: 30px;
-}
-
-  .profile_meta.fa
-  {
-    margin-right: 5px;
-    color: #d8d2cc;
-  }
-
-@media (min-width:25.0625em)and (max-width:45em)
-{
-  .profile_meta
-  {
-    padding-top: .92308rem;
-    padding-bottom: .92308rem;
-    display: inline-block;
-    margin-right: 20px;
-  }
-}
-
-@media (min-width:0)and (max-width:25em)
-{
-  .profile_meta
-  {
-    padding-top: .92308rem;
-    padding-bottom: .92308rem;
-    display: block;
-    margin-right: 0;
-  }
 }
 
 .footer_informations_block
@@ -2386,7 +2349,12 @@ th, td
     display: block;
     height: 0;
     z-index: 100;
-    height: 42px;
+    height: 27px;
+  }
+  
+  .header
+  {
+    height: 44px;
   }
 }
 
