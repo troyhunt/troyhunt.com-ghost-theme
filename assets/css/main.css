@@ -1390,7 +1390,8 @@ th, td
 
   .article_content .post_tag
   {
-    padding-top: 3.69231rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     position: relative;
     text-align: center;
   }
