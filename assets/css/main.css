@@ -2410,14 +2410,23 @@ th, td
 
 /* Troy's custom bits */
 
+#ad1, #ad3
+{
+    background-color: #D2D2D2;
+}
+
 #ad1
 {
   margin: 18px 0 38px;
+  width: 300px;
+  height: 250px;
 }
 
 #ad2 div
 {
   margin: 0 auto;
+  width: 160px;
+  height: 600px;
 }
 
 #ad3
