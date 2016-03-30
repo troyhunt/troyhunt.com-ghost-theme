@@ -405,6 +405,7 @@ pre
 .main-wrapper
 {
   position: relative;
+  min-height: 2500px;
 }
 
 .content-wrapper
@@ -454,7 +455,7 @@ pre
   }
 
 /* hide sidebar on non-desktop devices */
-@media (max-width: 1200px)
+@media (max-width: 1230px)
 {
   .content-wrapper
   {
@@ -464,6 +465,11 @@ pre
   .content-sidebar
   {
     display: none;
+  }
+  
+  .main-wrapper
+  {
+    min-height: auto;
   }
 }
 
