@@ -466,7 +466,7 @@ pre
   {
     display: none;
   }
-  
+
   .main-wrapper
   {
     min-height: fit-content;
@@ -1453,10 +1453,10 @@ th, td
   {
     top: 80px;
   }
-  
+
   .post_header
   {
-      height: 200px;
+    height: 200px;
   }
 }
 
@@ -1466,10 +1466,10 @@ th, td
   {
     top: 90px;
   }
-  
+
   .post_header
   {
-      height: 160px;
+    height: 160px;
   }
 }
 
@@ -1891,7 +1891,7 @@ th, td
 
     .article-open_shere a
     {
-      margin: 5px;
+      margin: 8px;
     }
 }
 
@@ -2125,10 +2125,10 @@ th, td
   font-size: 1.231em;
 }
 
-.tags_description p
-{
+  .tags_description p
+  {
     padding-bottom: 0;
-}
+  }
 
 .extra-pagination, .tags
 {
@@ -2356,7 +2356,7 @@ th, td
     z-index: 100;
     height: 27px;
   }
-  
+
   .header
   {
     height: 44px;
@@ -2416,9 +2416,9 @@ th, td
 
 /* Troy's custom bits */
 
-#ad1, #ad3
+#ad1, #ad3, #ad4
 {
-    background-color: #D2D2D2;
+  background-color: #D2D2D2;
 }
 
 #ad1
@@ -2445,10 +2445,22 @@ th, td
   display: block;
 }
 
-  #ad3 iframe
+  #ad3 iframe, #ad4 iframe
   {
     padding: 0;
   }
+
+#ad4
+{
+  display: none;
+}
+
+#ad4
+{
+  margin: 5% auto 0 auto;
+  width: 300px;
+  height: 250px;
+}
 
 #disqus_thread
 {
@@ -2459,6 +2471,19 @@ th, td
 @media (min-width:0)and (max-width:53em)
 {
   #ad3
+  {
+    display: none;
+  }
+
+  #ad4
+  {
+    display: block;
+  }
+}
+
+@media (min-width:0)and (max-width:22em)
+{
+  #ad4
   {
     display: none;
   }
