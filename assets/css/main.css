@@ -1857,6 +1857,7 @@ th, td
 .article-open_shere
 {
   text-align: center;
+  padding: 10px 0;
 }
 
 .article-open_content .article_text
@@ -1872,7 +1873,7 @@ th, td
 
 .article-open_shere a
 {
-  margin: 1.84615rem 10px;
+  margin: 1.2rem 10px;
   display: inline-block;
   padding: 12px 20px;
   font-weight: 700;
