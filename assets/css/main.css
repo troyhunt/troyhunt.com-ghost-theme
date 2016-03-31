@@ -175,8 +175,8 @@ blockquote, object, p
 @font-face
 {
   font-family: Vollkorn;
-  src: url(../fonts/vollkorn-regular-webfont.eot?1426151627);
-  src: url(../fonts/vollkorn-regular-webfont.eot?&1426151627#iefix)format('embedded-opentype'),url(../fonts/vollkorn-regular-webfont.woff?1426151593)format('woff'),url(../fonts/Vollkorn-Regular.ttf?1426151606)format('truetype'),url(../fonts/Vollkorn-Regular.otf?1426151618)format('opentype');
+  src: url(../fonts/vollkorn-regular-webfont.eot);
+  src: url(../fonts/vollkorn-regular-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-regular-webfont.woff)format('woff'),url(../fonts/Vollkorn-Regular.ttf)format('truetype'),url(../fonts/Vollkorn-Regular.otf)format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -184,8 +184,8 @@ blockquote, object, p
 @font-face
 {
   font-family: Vollkorn;
-  src: url(../fonts/vollkorn-medium-webfont.eot?1426151627);
-  src: url(../fonts/vollkorn-medium-webfont.eot?&1426151627#iefix)format('embedded-opentype'),url(../fonts/vollkorn-medium-webfont.woff?1426151593)format('woff'),url(../fonts/Vollkorn-Medium.ttf?1426151606)format('truetype'),url(../fonts/Vollkorn-Medium.otf?1426151618)format('opentype');
+  src: url(../fonts/vollkorn-medium-webfont.eot);
+  src: url(../fonts/vollkorn-medium-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-medium-webfont.woff)format('woff'),url(../fonts/Vollkorn-Medium.ttf)format('truetype'),url(../fonts/Vollkorn-Medium.otf)format('opentype');
   font-weight: 600;
   font-style: normal;
 }
@@ -193,8 +193,8 @@ blockquote, object, p
 @font-face
 {
   font-family: Vollkorn;
-  src: url(../fonts/vollkorn-italic-webfont.eot?1426151627);
-  src: url(../fonts/vollkorn-italic-webfont.eot?&1426151627#iefix)format('embedded-opentype'),url(../fonts/vollkorn-italic-webfont.woff?1426151593)format('woff'),url(../fonts/Vollkorn-Italic.ttf?1426151606)format('truetype'),url(../fonts/Vollkorn-Italic.otf?1426151618)format('opentype');
+  src: url(../fonts/vollkorn-italic-webfont.eot);
+  src: url(../fonts/vollkorn-italic-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-italic-webfont.woff)format('woff'),url(../fonts/Vollkorn-Italic.ttf)format('truetype'),url(../fonts/Vollkorn-Italic.otf)format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -202,8 +202,8 @@ blockquote, object, p
 @font-face
 {
   font-family: "PT Sans";
-  src: url(../fonts/PTsans.eot?1426152836);
-  src: url(../fonts/PTsans.eot?&1426152836#iefix)format('embedded-opentype'),url(../fonts/PTsans.woff?1426152836)format('woff'),url(../fonts/PTsans.ttf?1426152836)format('truetype'),url(../fonts/PTsans.svg?1426152836#PTsans)format('svg');
+  src: url(../fonts/PTsans.eot);
+  src: url(../fonts/PTsans.eot)format('embedded-opentype'),url(../fonts/PTsans.woff)format('woff'),url(../fonts/PTsans.ttf)format('truetype'),url(../fonts/PTsans.svg#PTsans)format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -211,8 +211,8 @@ blockquote, object, p
 @font-face
 {
   font-family: "PT Sans";
-  src: url(../fonts/PTsans-bold.eot?1426152856);
-  src: url(../fonts/PTsans-bold.eot?&1426152856#iefix)format('embedded-opentype'),url(../fonts/PTsans-bold.woff?1426152855)format('woff'),url(../fonts/PTsans-bold.ttf?1426152856)format('truetype'),url(../fonts/PTsans-bold.svg?1426152856#PTsans-bold)format('svg');
+  src: url(../fonts/PTsans-bold.eot);
+  src: url(../fonts/PTsans-bold.eot)format('embedded-opentype'),url(../fonts/PTsans-bold.woff)format('woff'),url(../fonts/PTsans-bold.ttf)format('truetype'),url(../fonts/PTsans-bold.svg#PTsans-bold)format('svg');
   font-weight: 700;
   font-style: normal;
 }
