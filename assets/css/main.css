@@ -469,7 +469,7 @@ pre
 
   .main-wrapper
   {
-    min-height: fit-content;
+    min-height: 0;
   }
 }
 
