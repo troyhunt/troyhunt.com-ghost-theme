@@ -4,12 +4,12 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
     cmq = require('gulp-combine-media-queries');
-
+	
 gulp.task('bundle-minify-js', function () {
-   gulp.src('assets/js/*.js')
-      .pipe(uglify())
-	  .pipe(concat('app.js'))
-      .pipe(gulp.dest('assets/js'))
+  return gulp.src(['assets/js/*.js', '!assets/js/app.js'])
+    .pipe(uglify())
+	.pipe(concat('app.js'))
+    .pipe(gulp.dest('assets/js'))
 });
 
 gulp.task('styles-build', function() {
