@@ -1218,7 +1218,7 @@ th, td
 {
   .header_navMenu
   {
-    padding: 11.5em 0 2em;
+    padding: 2em 0 2em;
     color: #fcfbf7;
   }
 
@@ -1401,6 +1401,9 @@ th, td
   .show-menu .header_navMenu_wrap
   {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .article-open, .article_feature_first-img, .profile
