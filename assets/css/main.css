@@ -2156,20 +2156,11 @@ th, td
 .extra-pagination, .tags
 {
   display: none;
-  padding-top: 67px;
 }
 
 .archive-template .extra-pagination, .tags
 {
   display: block;
-}
-
-@media (min-width:45.0625em)and (max-width:65em)
-{
-  .tags_item
-  {
-    width: 80%;
-  }
 }
 
 .no-cover .tags_head
@@ -2197,11 +2188,6 @@ th, td
   .pagination_pages
   {
     padding-top: 3.69231rem;
-  }
-
-  .tags_item
-  {
-    width: 90%;
   }
 
   .profile
