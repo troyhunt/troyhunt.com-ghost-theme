@@ -2267,6 +2267,7 @@ th, td
   .footer_subscription_formGroup img
   {
     width: 57px;
+    height: 15px;
   }
 
 .footer_informations
@@ -2296,6 +2297,7 @@ th, td
     .footer_subscription_formGroup img
     {
       width: 46px;
+      height: 12px;
     }
 }
 
