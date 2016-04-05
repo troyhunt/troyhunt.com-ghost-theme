@@ -113,7 +113,7 @@ a
 
 button, input, label, select, textarea
 {
-  font-family: "PT Sans",Georgia,Times,serif;
+  font-family: Tahoma, Geneva, sans-serif;
   border: 0;
   color: #fcfbf7;
   background-color: #565246;
@@ -197,24 +197,6 @@ blockquote, object, p
   src: url(../fonts/vollkorn-italic-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-italic-webfont.woff)format('woff'),url(../fonts/Vollkorn-Italic.ttf)format('truetype'),url(../fonts/Vollkorn-Italic.otf)format('opentype');
   font-weight: 400;
   font-style: italic;
-}
-
-@font-face
-{
-  font-family: "PT Sans";
-  src: url(../fonts/PTsans.eot);
-  src: url(../fonts/PTsans.eot)format('embedded-opentype'),url(../fonts/PTsans.woff)format('woff'),url(../fonts/PTsans.ttf)format('truetype'),url(../fonts/PTsans.svg#PTsans)format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face
-{
-  font-family: "PT Sans";
-  src: url(../fonts/PTsans-bold.eot);
-  src: url(../fonts/PTsans-bold.eot)format('embedded-opentype'),url(../fonts/PTsans-bold.woff)format('woff'),url(../fonts/PTsans-bold.ttf)format('truetype'),url(../fonts/PTsans-bold.svg#PTsans-bold)format('svg');
-  font-weight: 700;
-  font-style: normal;
 }
 
 .button, .button-load, .navMenu_link, h1, h2, h3, h4, h5, h6
@@ -301,10 +283,10 @@ h5
 .button, .button-load, .navMenu_link, h6
 {
   margin-bottom: .92308rem;
-  font-family: "PT Sans",Georgia,Times,serif;
-  font-size: 1.077em;
+  font-family: Tahoma, Geneva, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 p
@@ -420,11 +402,12 @@ pre
   right: 0;
   width: 400px;
   padding: 50px;
-  font-family: "PT Sans",Georgia,Times,serif;
+  font-family: Tahoma, Geneva, sans-serif;
   background-color: rgba(239, 237, 231, 0.46);
   height: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-left: 1px solid #cec9c4;
+  letter-spacing: 0.05em;
 }
 
   .content-sidebar h4
@@ -512,7 +495,7 @@ pre
 
 .article .post_info, .article_readNext_story .post:before, .post_info
 {
-  font-family: "PT Sans",Georgia,Times,serif;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 pre > code
@@ -1453,7 +1436,7 @@ th, td
 
 @media (min-width:0)and (max-width:45em)
 {
-  .article-open_item, .article_item_first, .profile_item, .tags_item
+  .article-open_item, .article_item_first, .profile_item
   {
     top: 80px;
   }
@@ -1466,7 +1449,7 @@ th, td
 
 @media (max-width: 25em) and (min-width: 0)
 {
-  .article-open_item, .article_item_first, .profile_item, .tags_item
+  .article-open_item, .article_item_first, .profile_item
   {
     top: 90px;
   }
@@ -1796,7 +1779,7 @@ th, td
 
 .article-open_shere a, .pagination_next, .pagination_prev, .tag
 {
-  font-family: "PT Sans",Georgia,Times,serif;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 .article-open_shere .fa
