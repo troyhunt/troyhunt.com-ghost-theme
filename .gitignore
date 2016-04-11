@@ -23,6 +23,10 @@ $RECYCLE.BIN/
 # Node modules
 node_modules
 
+# Generated files
+assets/css/main.min.css
+assets/js/app.js
+
 # =========================
 # Operating System Files
 # =========================
