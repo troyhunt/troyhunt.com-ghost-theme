@@ -12,7 +12,7 @@
 
 
 
-<div class="post_header container">
+<div class="post_header container"{{#if image}} style="background-image: url({{image}})"{{/if}}>
   <div class="hover"></div>
 </div>
 
@@ -21,7 +21,7 @@
 <div class="main-wrapper">
 <div class="content-wrapper">
 
-<div class="article-open container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<div class="article-open container no-cover">
     <div class="hover"></div>
     <article class="article-open_item wrap">
         <header class="post_head">
@@ -119,7 +119,7 @@
 
 <aside class="article_readNext">
     {{#next_post}}
-    <a class="article_readNext_story col-2 {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="article_readNext_story col-2 no-cover">
         <section class="post">
             <h4>{{title}}</h4>
         </section>
@@ -132,7 +132,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="article_readNext_story prev col-2 {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="article_readNext_story prev col-2 no-cover">
         <section class="post">
             <h4>{{title}}</h4>
         </section>
