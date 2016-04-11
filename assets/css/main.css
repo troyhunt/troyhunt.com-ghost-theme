@@ -107,7 +107,6 @@ a
   -o-transition-duration: .2s;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
-  text-decoration: none;
   color: #fcfbf7;
 }
 
@@ -287,6 +286,7 @@ h5
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 p
@@ -418,7 +418,6 @@ pre
   .content-sidebar .fa, .article-open_author_bio .fa
   {
     text-decoration: none;
-    border-bottom: none;
   }
 
   .content-sidebar hr
@@ -541,7 +540,6 @@ code
 .article_text a
 {
   color: #ccb285;
-  border-bottom: 1px solid;
 }
 
 .article_text > p, .article_text > div p, th, td
@@ -582,7 +580,6 @@ th, td
 .article_text p > a
 {
   color: #ccb285;
-  border-bottom: 1px solid;
 }
 
   .article_text p > a.article_link-more, .article_text p > a.imageLink
@@ -1094,6 +1091,7 @@ th, td
   .post_socialIcons .fa
   {
     font-size: 1em;
+    text-decoration: none;
   }
 
   .post_socialIcons .socialIcons_link
@@ -1195,6 +1193,7 @@ th, td
 .header_socialIcons.light .socialIcons_link a
 {
   color: #fcfbf7;
+  text-decoration: none;
 }
 
 @media (min-width:0)and (max-width:45em)
@@ -1813,6 +1812,7 @@ th, td
 .article .post_title a
 {
   color: #403d34;
+  text-decoration: none;
 }
 
 .article-open, .profile
@@ -1866,6 +1866,7 @@ th, td
   text-transform: uppercase;
   letter-spacing: .1em;
   border-radius: 20px;
+  text-decoration: none;
 }
 
 @media (min-width:0)and (max-width:55em)
@@ -1875,10 +1876,10 @@ th, td
     font-size: .923em;
   }
 
-    .article-open_shere a
-    {
-      margin: 10px;
-    }
+  .article-open_shere a
+  {
+    margin: 10px;
+  }
 }
 
 @media (min-width:0)and (max-width:40em)
@@ -1985,7 +1986,6 @@ th, td
 .article-open_author_bio a
 {
   color: #ccb285;
-  border-bottom: 1px solid;
 }
 
 .article-open_author p
@@ -2028,6 +2028,7 @@ th, td
     display: inline-block;
     color: #847b79;
     padding: 8px 15px;
+    text-decoration: none;
   }
 
 @media (min-width:0)and (max-width:45em)
@@ -2223,24 +2224,29 @@ th, td
   font-size: 1.8em;
 }
 
-  .footer_subscription_formGroup h4
-  {
-    font-style: italic;
-    color: #ccb285;
-    margin-bottom: 1rem;
-  }
+footer a
+{
+  text-decoration: none;
+}
+
+.footer_subscription_formGroup h4
+{
+  font-style: italic;
+  color: #ccb285;
+  margin-bottom: 1rem;
+}
 
 
-  .footer_subscription_formGroup p
-  {
-    padding: 0;
-  }
+.footer_subscription_formGroup p
+{
+  padding: 0;
+}
 
-  .footer_subscription_formGroup img
-  {
-    width: 57px;
-    height: 15px;
-  }
+.footer_subscription_formGroup img
+{
+  width: 57px;
+  height: 15px;
+}
 
 .footer_informations
 {
