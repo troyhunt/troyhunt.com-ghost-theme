@@ -12,7 +12,7 @@
 
 
 
-<div class="post_header container"{{#if image}} style="background-image: url({{image}})"{{/if}}>
+<div class="post_header container">
   <div class="hover"></div>
 </div>
 
@@ -119,7 +119,7 @@
 
 <aside class="article_readNext">
     {{#next_post}}
-    <a class="article_readNext_story col-2 no-cover">
+    <a class="article_readNext_story col-2" href="{{url}}">
         <section class="post">
             <h4>{{title}}</h4>
         </section>
@@ -132,14 +132,14 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="article_readNext_story prev col-2 no-cover">
+    <a class="article_readNext_story prev col-2" href="{{url}}">
         <section class="post">
             <h4>{{title}}</h4>
         </section>
     </a>
     {{else}}
-    <a class="article_readNext_story prev col-2 no-cover">
-        <section class="no-post">
+    <a class="article_readNext_story prev col-2">
+        <section class="post">
             <h4>No more prev posts!</h4>
         </section>
     </a>
