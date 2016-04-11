@@ -18,11 +18,6 @@ body, html
     clear: both;
   }
 
-.article_readNext_story:before, .article_readNext_story:hover:before, .hover:after
-{
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF2C2A24', endColorstr='#FF2C2A24');
-}
-
 .button, .button-load, .navMenu_link, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
 {
   margin: 0;
@@ -1515,6 +1510,11 @@ th, td
   background-color: #eeedea;
 }
 
+  .article_readNext a
+  {
+    color: #847b79;
+  }
+
   .article_readNext .no-post, .article_readNext_story .post
   {
     display: inline-block;
@@ -1531,9 +1531,6 @@ th, td
 .article_readNext_story
 {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
   .article_readNext_story:first-child
@@ -1584,36 +1581,6 @@ th, td
   text-align: center;
 }
 
-.article_readNext_story:before
-{
-  content: "";
-  display: block;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(44,42,36,.2);
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjMmEyNCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYzJhMjQiIHN0b3Atb3BhY2l0eT0iMC42Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
-  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(44,42,36,.2)),color-stop(100%,rgba(44,42,36,.6)));
-  background-image: -moz-linear-gradient(top,rgba(44,42,36,.2)0,rgba(44,42,36,.6)100%);
-  background-image: -webkit-linear-gradient(top,rgba(44,42,36,.2)0,rgba(44,42,36,.6)100%);
-  background-image: linear-gradient(to bottom,rgba(44,42,36,.2)0,rgba(44,42,36,.6)100%);
-  -webkit-transition: ease-out .4s;
-  -moz-transition: ease-out .4s;
-  -o-transition: ease-out .4s;
-  transition: ease-out .4s;
-}
-
-.article_readNext_story:hover:before
-{
-  background-color: rgba(44,42,36,.4);
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjMmEyNCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYzJhMjQiIHN0b3Atb3BhY2l0eT0iMC42Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
-  background-size: 100%;
-  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,rgba(44,42,36,.4)),color-stop(100%,rgba(44,42,36,.6)));
-  background-image: -moz-linear-gradient(top,rgba(44,42,36,.4)0,rgba(44,42,36,.6)100%);
-  background-image: -webkit-linear-gradient(top,rgba(44,42,36,.4)0,rgba(44,42,36,.6)100%);
-  background-image: linear-gradient(to bottom,rgba(44,42,36,.4)0,rgba(44,42,36,.6)100%);
-}
-
 .article_readNext_story .post
 {
   width: initial;
@@ -1634,7 +1601,7 @@ th, td
   text-transform: uppercase;
   line-height: 1.3em;
   letter-spacing: .1em;
-  color: #cec9c4;
+  color: #847b79;
 }
 
 .article_readNext_story.prev .post:before
@@ -2076,7 +2043,7 @@ th, td
 
 .pagination, .tags_item
 {
-  padding-top: 7rem;
+  padding-top: 1.84615rem;
   padding-bottom: 1.84615rem;
   background-color: #eeedea;
   border-bottom: 1px solid #cec9c4;
@@ -2092,6 +2059,7 @@ th, td
   text-transform: uppercase;
   line-height: 2em;
   color: #847b79;
+  text-decoration: none;
 }
 
   .pagination_next:hover, .pagination_prev:hover
@@ -2105,6 +2073,7 @@ th, td
   float: right;
   margin-left: 0;
   margin-right: 20px;
+  text-decoration: none;
 }
 
   .pagination_prev.fa, .pagination_next.fa
