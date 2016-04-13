@@ -1366,6 +1366,7 @@ th, td
     padding: 1rem 0;
     position: relative;
     text-align: center;
+    z-index: -1; /* Hack as footer keeps going up over body when the CSS is minimised */
   }
 
 @media (min-width:0)and (max-width:45em)
@@ -1498,6 +1499,7 @@ th, td
   border: none;
   color: #ccb285;
   margin-left: 0.2em;
+  text-decoration: none;
 }
 
 .article_readNext
