@@ -2188,7 +2188,7 @@ footer a
   padding: 0;
 }
 
-.footer_subscription_formGroup img
+.footer_subscription_formGroup svg
 {
   width: 57px;
   height: 15px;
@@ -2218,7 +2218,7 @@ footer a
     font-size: 1.3em;
   }
 
-    .footer_subscription_formGroup img
+    .footer_subscription_formGroup svg
     {
       width: 46px;
       height: 12px;
