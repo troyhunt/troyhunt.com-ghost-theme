@@ -377,13 +377,13 @@ pre
   margin: 0 0 1.75em;
   border: 1px solid #cec9c4;
   padding: 10px;
-  font-family: Inconsolata,monospace,sans-serif;
-  font-size: 1.1em;
+  font-family: "Courier New",Inconsolata,monospace,sans-serif;
+  font-size: 1.2em;
   white-space: pre-wrap;
   overflow: auto;
   background: #eeedea;
   border-radius: 3px;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 /* Sidebar stuff begin: */
