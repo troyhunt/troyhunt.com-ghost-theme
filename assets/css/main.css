@@ -353,14 +353,22 @@ blockquote
   width: 100%;
 }
 
-blockquote > p:before
+blockquote:before
 {
-  padding-top: .92308rem;
-  padding-bottom: .92308rem;
   content: '\201C';
   display: block;
-  font-size: 2.769em;
+  font-size: 5.1em;
   color: #ccb285;
+  text-align: center;
+}
+
+blockquote:after
+{
+  content: '\201D';
+  display: block;
+  font-size: 5.1em;
+  color: #ccb285;
+  text-align: center;
 }
 
 pre
@@ -965,39 +973,6 @@ th, td
   margin-left: auto;
 }
 
-@media (min-width:45.0625em)and (max-width:65em)
-{
-  .post
-  {
-    float: left;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-@media (min-width:25.0625em)and (max-width:45em)
-{
-  .post
-  {
-    float: left;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-@media (min-width:0)and (max-width:25em)
-{
-  .post
-  {
-    float: left;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
 @media (min-width:0)and (max-width:65em)
 {
   .post
@@ -1366,7 +1341,6 @@ th, td
     padding: 1rem 0;
     position: relative;
     text-align: center;
-    z-index: -1; /* Hack as footer keeps going up over body when the CSS is minimised */
   }
 
 @media (min-width:0)and (max-width:45em)
