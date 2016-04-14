@@ -1,0 +1,2 @@
+npm install gulp -g
+npm install --save-dev gulp gulp-rename gulp-cssmin gulp-uglify gulp-combine-media-queries gulp-concat
