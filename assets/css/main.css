@@ -384,6 +384,7 @@ pre
   background: #eeedea;
   border-radius: 3px;
   line-height: 1.4em;
+  word-wrap: break-word;
 }
 
 /* Sidebar stuff begin: */
