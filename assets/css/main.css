@@ -619,18 +619,6 @@ th, td
   list-style-position: inside;
 }
 
-  .article_text ol > li a
-  {
-    color: #ccb285;
-    border-bottom: 1px solid;
-  }
-
-.article_text ul > li a
-{
-  color: #ccb285;
-  border-bottom: 1px solid;
-}
-
 .article_text ul > li:before
 {
   content: "\002022";
