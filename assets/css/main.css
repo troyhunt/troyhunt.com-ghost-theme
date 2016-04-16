@@ -2025,6 +2025,11 @@ th, td
   border-top: 1px solid #cec9c4;
 }
 
+.extra-pagination .pagination
+{
+  padding-top: 6.84615rem;
+}
+
 .pagination_next, .pagination_prev
 {
   display: inline-block;
@@ -2410,6 +2415,11 @@ footer a
 #disqus_thread
 {
   padding-top: 1.84615rem;
+}
+
+iframe.twitter-tweet
+{
+  margin-bottom: 2.5rem !important;
 }
 
 /* Banner ad has to go when the page is too narrow */
