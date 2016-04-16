@@ -582,6 +582,16 @@ th, td
   line-height: 1.7em;
 }
 
+.article_text ol > li li, .article_text ul > li li /* Why does this feel so hacky??? */
+{
+  font-size: 1em;
+}
+
+.article_text li > ol, article_text li > ul
+{
+  padding-bottom: 0;  
+}
+
 .article_text p > a
 {
   color: #ccb285;
@@ -609,14 +619,13 @@ th, td
 {
   .article_text ol, .article_text ul
   {
-    padding-left: 10px;
+    padding-left: 25px;
   }
 }
 
 .article_text ol > li
 {
   list-style-type: decimal;
-  list-style-position: inside;
 }
 
 .article_text ul > li:before
