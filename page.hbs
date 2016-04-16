@@ -9,7 +9,7 @@
 {{! Header transparent}}
 {{> header}}
 
-<div class="article_feature_first-img container {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<div class="article_feature_first-img container" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}})">
     <div class="hover"></div>
     <article class="article_item_first wrap hover container">
         <header class="post_head">
