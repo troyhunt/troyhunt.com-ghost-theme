@@ -102,7 +102,7 @@ a
   -o-transition-duration: .2s;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
-  color: #fcfbf7;
+  color: #ccb285;
 }
 
 button, input, label, select, textarea
@@ -283,6 +283,7 @@ h5
   text-transform: uppercase;
   letter-spacing: -0.02em;
   text-decoration: none;
+  color: #fcfbf7;
 }
 
 p
@@ -542,11 +543,6 @@ code
   font-weight: 600;
 }
 
-.article_text a
-{
-  color: #ccb285;
-}
-
 .article_text > p, .article_text > div p, th, td
 {
   padding-bottom: 1.92308rem;
@@ -582,26 +578,21 @@ th, td
   line-height: 1.7em;
 }
 
-.article_text ol > li li, .article_text ul > li li /* Why does this feel so hacky??? */
-{
-  font-size: 1em;
-}
+  .article_text ol > li li, .article_text ul > li li /* Why does this feel so hacky??? */
+  {
+    font-size: 1em;
+  }
 
 .article_text li > ol, article_text li > ul
 {
-  padding-bottom: 0;  
+  padding-bottom: 0;
 }
 
-.article_text p > a
+.article_text p > a.article_link-more, .article_text p > a.imageLink
 {
-  color: #ccb285;
+  border: none;
+  text-decoration: none !important;
 }
-
-  .article_text p > a.article_link-more, .article_text p > a.imageLink
-  {
-    border: none;
-    text-decoration: none !important;
-  }
 
 .button-load, .caption
 {
@@ -1250,11 +1241,6 @@ th, td
   }
 }
 
-.navMenu_link:hover
-{
-  color: #ccb285;
-}
-
 .navMenu_list
 {
   padding: 0 1.1em 1em;
@@ -1809,6 +1795,7 @@ th, td
   letter-spacing: .1em;
   border-radius: 20px;
   text-decoration: none;
+  color: #fcfbf7;
 }
 
 @media (min-width:0)and (max-width:55em)
