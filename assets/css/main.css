@@ -220,7 +220,7 @@ h1
 h2
 {
   margin-bottom: 1.47692rem;
-  font-size: 2.923em;
+  font-size: 2.5em;
 }
 
 h3
@@ -239,9 +239,14 @@ h3
 
 @media (min-width:25.0625em)and (max-width:45em)
 {
+  h2
+  {
+    font-size: 2em;
+  }
+  
   h3
   {
-    font-size: 1.75em;
+    font-size: 1.4em;
   }
 }
 
@@ -259,7 +264,12 @@ h4
 
   h2
   {
-    font-size: 2.462em;
+    font-size: 1.5em;
+  }
+  
+  h3
+  {
+    font-size: 1.3em;
   }
 
   h4
