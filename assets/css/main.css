@@ -1028,7 +1028,7 @@ th, td
   right: 0;
   border-bottom: 1px solid rgba(252,251,247,.2);
   z-index: 99;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.6);
   padding-left: 10%;
   padding-right: 10%;
 }
