@@ -84,7 +84,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body
 {
   margin: 0;
-  display: table;
   width: 100%;
   font-size: 100%;
   font-family: Vollkorn,Helvetica,Arial,sans-serif;
@@ -148,12 +147,6 @@ address
 blockquote, object, p
 {
   padding-bottom: 1.84615rem;
-}
-
-#container
-{
-  display: table-row;
-  height: auto;
 }
 
 #footer
