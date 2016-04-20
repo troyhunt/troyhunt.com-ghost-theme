@@ -57,6 +57,15 @@
     <article class="wrap">
         <section class="article_text post">
             {{content}}
+            
+            {{#if tags}}
+            <section class="article-open_tag">
+                {{#foreach tags}}
+                <a class="tag" href="{{url}}">{{name}}</a>
+                {{/foreach}}
+            </section>
+            {{/if}}
+                
             <div id="ad3" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="728x90"></div>
             <div id="ad4" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
         </section>
@@ -82,15 +91,6 @@
                 </div>
             </section>
             {{/author}}
-                {{#if tags}}
-            <section class="article-open_tag">
-                <h6>Tags:</h6>
-                {{#foreach tags}}
-                <a class="tag" href="{{url}}">{{name}}</a>
-                {{/foreach}}
-            </section>
-                {{/if}}
-
                 <div id="disqus_thread"></div>
                 <script>
                 var disqus_config = function () {
