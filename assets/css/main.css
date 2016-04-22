@@ -301,7 +301,9 @@ i
 
 hr
 {
-  border: 1px solid #eeedea;
+  border: none;
+  height: 1px;
+  background-color: #cec9c4; /* Modern Browsers */
 }
 
 figcaption
