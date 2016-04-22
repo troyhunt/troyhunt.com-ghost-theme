@@ -2014,6 +2014,11 @@ th, td
   border-top: 1px solid #cec9c4;
 }
 
+.tags_item
+{
+  padding-top: 6.84615rem;
+}
+
 .extra-pagination .pagination
 {
   padding-top: 6.84615rem;
