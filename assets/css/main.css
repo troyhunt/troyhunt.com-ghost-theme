@@ -1379,6 +1379,7 @@ th, td
   margin: auto;
   color: #fcfbf7;
   z-index: 9;
+  text-shadow: 0 0 15px #3C3C3C
 }
 
 .no-cover .article-open_item
