@@ -160,33 +160,6 @@ blockquote, object, p
   display: none;
 }
 
-@font-face
-{
-  font-family: Vollkorn;
-  src: url(../fonts/vollkorn-regular-webfont.eot);
-  src: url(../fonts/vollkorn-regular-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-regular-webfont.woff)format('woff'),url(../fonts/Vollkorn-Regular.ttf)format('truetype'),url(../fonts/Vollkorn-Regular.otf)format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face
-{
-  font-family: Vollkorn;
-  src: url(../fonts/vollkorn-medium-webfont.eot);
-  src: url(../fonts/vollkorn-medium-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-medium-webfont.woff)format('woff'),url(../fonts/Vollkorn-Medium.ttf)format('truetype'),url(../fonts/Vollkorn-Medium.otf)format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face
-{
-  font-family: Vollkorn;
-  src: url(../fonts/vollkorn-italic-webfont.eot);
-  src: url(../fonts/vollkorn-italic-webfont.eot)format('embedded-opentype'),url(../fonts/vollkorn-italic-webfont.woff)format('woff'),url(../fonts/Vollkorn-Italic.ttf)format('truetype'),url(../fonts/Vollkorn-Italic.otf)format('opentype');
-  font-weight: 400;
-  font-style: italic;
-}
-
 .button, .button-load, .navMenu_link, h1, h2, h3, h4, h5, h6
 {
   margin-bottom: 1.84615rem;
@@ -294,7 +267,7 @@ strong
   font-weight: 700;
 }
 
-i
+i, em
 {
   font-style: italic;
 }
