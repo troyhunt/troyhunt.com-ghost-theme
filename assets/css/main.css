@@ -346,7 +346,7 @@ blockquote:after
   text-align: center;
 }
 
-pre
+pre, code
 {
   margin: 0 0 1.75em;
   border: 1px solid #cec9c4;
@@ -359,6 +359,8 @@ pre
   border-radius: 3px;
   line-height: 1.4em;
   word-wrap: break-word;
+  display: block;
+  font-size: 15.6px;
 }
 
 /* Sidebar stuff begin: */
@@ -483,14 +485,6 @@ pre > code
   background: 0 0;
   border: none;
   padding: 0;
-}
-
-code
-{
-  padding: 3px 5px;
-  background: #eeedea;
-  border: 1px solid #cec9c4;
-  white-space: nowrap;
 }
 
 .article .article_text > p:first-child:first-letter
