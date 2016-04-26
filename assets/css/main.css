@@ -513,7 +513,6 @@ code
 {
   margin-top: 1.84615rem;
   margin-bottom: .55385rem;
-  font-weight: 600;
 }
 
 .article_text > p, .article_text > div p, th, td
@@ -984,7 +983,7 @@ th, td
   color: #ccb285;
 }
 
-  .button-load:hover, .no-cover .socialIcons_link
+  .button-load:hover
   {
     background-color: #eeedea;
   }
@@ -1023,7 +1022,6 @@ th, td
 
   .post_socialIcons .fa
   {
-    font-size: 1em;
     text-decoration: none;
   }
 
@@ -1109,18 +1107,24 @@ th, td
 {
   display: inline-table;
   margin-left: 15px;
-  background-color: rgba(252,251,247,.13);
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
   text-align: center;
 }
 
   .socialIcons_link a
   {
     color: #847b79;
-    font-size: 17px;
-    margin-top: 8px;
+    display: block;
+    background-color: rgba(252,251,247,.13);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    padding-top: 8px;
+  }
+  
+  .post_socialIcons  .socialIcons_link a
+  {
+    background-color: #eeedea;
   }
 
 .header_socialIcons.light .socialIcons_link a
