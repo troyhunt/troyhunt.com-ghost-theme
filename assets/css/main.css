@@ -999,6 +999,8 @@ th, td
   background-color: rgba(0,0,0,.6);
   padding-left: 10%;
   padding-right: 10%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 @media (min-width:0)and (max-width:21em)
