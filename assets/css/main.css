@@ -163,11 +163,6 @@ blockquote, object, p
 .button, .button-load, .navMenu_link, h1, h2, h3, h4, h5, h6
 {
   margin-bottom: 1.84615rem;
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga","dlig";
-  -webkit-font-feature-settings: "liga","dlig";
-  -o-font-feature-settings: "liga","dlig";
-  font-feature-settings: "liga","dlig";
   position: relative;
   line-height: 1.3em;
 }
