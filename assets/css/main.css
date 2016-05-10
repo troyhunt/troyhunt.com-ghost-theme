@@ -2366,7 +2366,7 @@ footer a
   height: 90px;
   width: 728px;
   max-width: 100%;
-  margin: 5% auto;
+  margin: 0 auto;
   background-color: #cec9c4;
   display: block;
 }
@@ -2383,9 +2383,14 @@ footer a
 
 #ad4
 {
-  margin: 5% auto;
+  margin: 0 auto;
   width: 300px;
   height: 250px;
+}
+
+.footer-ad
+{
+  padding: 5% 0;
 }
 
 #disqus_thread
