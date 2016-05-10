@@ -204,7 +204,7 @@ h3
   {
     font-size: 2em;
   }
-  
+
   h3
   {
     font-size: 1.4em;
@@ -222,7 +222,7 @@ h4
   {
     font-size: 2.615em;
   }
-  
+
   h3
   {
     font-size: 1.3em;
@@ -368,7 +368,7 @@ pre, code
 
 .content-wrapper
 {
-  padding: 0 400px 5% 0;
+  padding: 0 400px 0 0;
 }
 
 .content-sidebar
@@ -417,7 +417,7 @@ pre, code
 {
   .content-wrapper
   {
-    padding: 0 0 5% 0;
+    padding: 0;
   }
 
   .content-sidebar
@@ -1112,11 +1112,11 @@ th, td
     font-size: 15px;
     padding-top: 8px;
   }
-  
-  .post_socialIcons  .socialIcons_link a
-  {
-    background-color: #eeedea;
-  }
+
+.post_socialIcons .socialIcons_link a
+{
+  background-color: #eeedea;
+}
 
 .header_socialIcons.light .socialIcons_link a
 {
@@ -1238,6 +1238,16 @@ th, td
   margin: 0 auto;
 }
 
+  .article.container
+  {
+    border-bottom: 1px solid #cec9c4;
+  }
+
+    .article.container:last-child
+    {
+      border-bottom: none;
+    }
+
 .post_header
 {
   background-image: url(/assets/img/page-banner.jpg);
@@ -1286,12 +1296,13 @@ th, td
 
 .article_content, .page article.article
 {
-  padding-top: 5%;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 }
 
   .article_content .post_tag
   {
-    padding: 1rem 0;
+    padding: 1rem 0 1.92308rem 0;
     position: relative;
     text-align: center;
   }
@@ -1749,7 +1760,6 @@ th, td
 
 .article-open_content .article_text
 {
-  padding-bottom: 4.61538rem;
   border-bottom: 2px solid #eeedea;
 }
 
@@ -2356,7 +2366,7 @@ footer a
   height: 90px;
   width: 728px;
   max-width: 100%;
-  margin: 5% auto 0 auto;
+  margin: 5% auto;
   background-color: #cec9c4;
   display: block;
 }
@@ -2373,7 +2383,7 @@ footer a
 
 #ad4
 {
-  margin: 5% auto 0 auto;
+  margin: 5% auto;
   width: 300px;
   height: 250px;
 }
