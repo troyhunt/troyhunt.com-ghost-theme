@@ -6,9 +6,16 @@ var gulp = require('gulp'),
     cmq = require('gulp-combine-media-queries');
 	
 gulp.task('bundle-minify-js', function () {
-  return gulp.src(['assets/js/*.js', '!assets/js/app.js'])
+  return gulp.src(['assets/js/classie.js', 'assets/js/main.js', 'assets/js/troyhunt.js'])
     .pipe(uglify())
 	.pipe(concat('app.js'))
+    .pipe(gulp.dest('assets/js'))
+});
+
+gulp.task('bundle-minify-google-analytics', function () {
+  return gulp.src(['assets/js/google-analytics.js'])
+    .pipe(uglify())
+	.pipe(concat('google-analytics.min.js'))
     .pipe(gulp.dest('assets/js'))
 });
 
@@ -20,4 +27,4 @@ gulp.task('styles-build', function() {
     .pipe(gulp.dest('assets/css'));
 })
 
-gulp.task('default', ['bundle-minify-js', 'styles-build']);
+gulp.task('default', ['bundle-minify-js', 'bundle-minify-google-analytics', 'styles-build']);
