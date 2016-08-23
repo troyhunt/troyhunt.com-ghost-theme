@@ -27,10 +27,6 @@
 </head>
 
 <body class="{{body_class}}">
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
     {{! Everything else gets inserted here }}
 
     <div id="container">
@@ -58,7 +54,6 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
     <script type="text/javascript">!function(s){"use strict";function e(s){return new RegExp("(^|\\s+)"+s+"(\\s+|$)")}function n(s,e){var n=a(s,e)?c:t;n(s,e)}var a,t,c;"classList"in document.documentElement?(a=function(s,e){return s.classList.contains(e)},t=function(s,e){s.classList.add(e)},c=function(s,e){s.classList.remove(e)}):(a=function(s,n){return e(n).test(s.className)},t=function(s,e){a(s,e)||(s.className=s.className+" "+e)},c=function(s,n){s.className=s.className.replace(e(n)," ")});var i={hasClass:a,addClass:t,removeClass:c,toggleClass:n,has:a,add:t,remove:c,toggle:n};"function"==typeof define&&define.amd?define(i):s.classie=i}(window);!function(){function e(){n()}function n(){d.addEventListener("click",t),i&&i.addEventListener("click",t),o.addEventListener("click",function(e){var n=e.target;u&&n!==d&&t()})}function t(){u?classie.remove(c,"show-menu"):classie.add(c,"show-menu"),u=!u}var c=document.body,o=document.querySelector("#container"),d=document.getElementById("open-button"),i=document.getElementById("close-button"),u=!1;e()}();function _dmBootstrap(t){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+t,(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}function _dmFollowup(t){"undefined"==typeof DMAds&&_dmBootstrap("cdn2.DeveloperMedia.com/a.min.js")}!function(){_dmBootstrap("cdn1.DeveloperMedia.com/a.min.js"),setTimeout(_dmFollowup,2e3)}();var disqus_shortname="troyhunt";!function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript",t.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(t)}();</script>
 </body>
 </html>
