@@ -2424,3 +2424,21 @@ iframe.twitter-tweet
     display: none;
   }
 }
+
+
+.pluralsight-content
+{
+    margin: 0 0 1.75em;
+    border: 1px solid #cec9c4;
+    padding: 10px;
+    font-size: 2em;
+    background: #eeedea;
+    border-radius: 3px;
+    line-height: 1.5em;
+}
+
+.pluralsight-content a img
+{
+  width: 350px !important;
+  margin-top: 10px;
+}
