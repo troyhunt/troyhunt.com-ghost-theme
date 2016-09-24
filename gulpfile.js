@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     cmq = require('gulp-combine-media-queries');
 	
 gulp.task('bundle-minify-js', function () {
-  return gulp.src(['assets/js/classie.js', 'assets/js/main.js', 'assets/js/troyhunt.js'])
+  return gulp.src(['assets/js/classie.js', 'assets/js/main.js', 'assets/js/sponsorship.js', 'assets/js/disqus.js'])
     .pipe(uglify())
 	.pipe(concat('app.js'))
     .pipe(gulp.dest('assets/js'))
