@@ -34,7 +34,7 @@ function showUnsponsored(){
 }
 
 function showSponsor(sponsorMessage){
-  document.getElementById('sponsor_message').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '"><strong>Presently sponsored by:</strong> ' + sponsorMessage.message + '</a>';
+  document.getElementById('sponsor_message').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '"><strong>Presently sponsored by:</strong> ' + sponsorMessage.message + ' <i class="fa fa-external-link" aria-hidden="true"></i></a>';
   document.getElementById('ad1').style.display = 'none';
   document.getElementById('ad2').style.display = 'none';
   document.getElementById('ad3').style.display = 'none';

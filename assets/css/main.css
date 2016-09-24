@@ -2440,5 +2440,6 @@ iframe.twitter-tweet
 .pluralsight-content a img
 {
   width: 350px !important;
+  height: 76px !important;
   margin-top: 10px;
 }
