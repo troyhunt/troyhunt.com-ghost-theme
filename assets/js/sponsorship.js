@@ -29,12 +29,12 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 function showUnsponsored(){
-  document.getElementById('sponsor_message').innerHTML = "<a href='/sponsorship'><strong>Presently sponsored by:</strong> I'm unsponsored today, click to learn more</a>";
+  document.getElementById('sponsor_message').innerHTML = "<a href='/sponsorship'><strong>Sponsored by:</strong> I'm unsponsored today, click to learn more</a>";
   (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
 }
 
 function showSponsor(sponsorMessage){
-  document.getElementById('sponsor_message').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '"><strong>Presently sponsored by:</strong> ' + sponsorMessage.message + ' <i class="fa fa-external-link" aria-hidden="true"></i></a>';
+  document.getElementById('sponsor_message').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '"><strong>Sponsored by:</strong> ' + sponsorMessage.message + ' <i class="fa fa-external-link" aria-hidden="true"></i></a>';
   [].forEach.call(document.querySelectorAll('.ad'), function (el) {
     el.style.display = 'none';
   });
