@@ -1277,7 +1277,7 @@ th, td
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 30%;
   background-size: cover;
 }
 
@@ -1385,13 +1385,19 @@ th, td
 {
   .article_item_first
   {
-    padding-top: 150px;
-    padding-bottom: 40px;
+    padding-top: 220px;
+    padding-bottom: 100px;
   }
 
   .post_header
   {
     height: 200px;
+  }
+
+  .article_feature_first-img
+  {
+    background-position: 40% 0%;
+    background-size: 880px 469px;
   }
 }
 
