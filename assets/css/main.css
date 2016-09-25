@@ -2459,7 +2459,7 @@ iframe.twitter-tweet
   padding: 10px 10%;
   font-family: Tahoma, Geneva, sans-serif;
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   width: 100%;
 }
 
@@ -2477,7 +2477,7 @@ iframe.twitter-tweet
 #sponsor_message .fa-spin
 {
   font-size: 1.2em;
-  color: #9f8f6f;
+  color: #745d2f;
 }
 
 #sponsor_message .fa-external-link
