@@ -10,7 +10,7 @@ function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn
 
 // Sponsorship
 var xmlhttp = new XMLHttpRequest();
-var url = "http://local.bloghelpers.troyhunt.com/api/CurrentSponsor";
+var url = "https://bloghelpers.troyhunt.com/api/CurrentSponsor";
 
 xmlhttp.onreadystatechange = function () {
   if (this.readyState === 4 && this.status === 200) {
@@ -35,8 +35,7 @@ function showUnsponsored(){
 
 function showSponsor(sponsorMessage){
   document.getElementById('sponsor_message').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '"><strong>Presently sponsored by:</strong> ' + sponsorMessage.message + ' <i class="fa fa-external-link" aria-hidden="true"></i></a>';
-  document.getElementById('ad1').style.display = 'none';
-  document.getElementById('ad2').style.display = 'none';
-  document.getElementById('ad3').style.display = 'none';
-  document.getElementById('ad4').style.display = 'none';
+  [].forEach.call(document.querySelectorAll('.ad'), function (el) {
+    el.style.display = 'none';
+  });
 }
