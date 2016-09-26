@@ -2458,7 +2458,7 @@ iframe.twitter-tweet
 
 /* Sponsorship */
 
-.sponsor_block
+.message_of_support
 {
   top: 65px;
   background-color: rgba(174,145,93,.90);
@@ -2469,37 +2469,37 @@ iframe.twitter-tweet
   width: 100%;
 }
 
-  .sponsor_block a
+  .message_of_support a
   {
     text-decoration: none;
     color: #000;
   }
 
-  .sponsor_block p
+  .message_of_support p
   {
     padding: 0 1.1em;
   }
 
-#sponsor_message .fa-spin
+#message_contents .fa-spin
 {
   font-size: 1.2em;
   color: #745d2f;
 }
 
-#sponsor_message .fa-external-link
+#message_contents .fa-external-link
 {
   color: #745d2f;
 }
 
 @media (max-width: 65em) and (min-width: 0)
 {
-  .sponsor_block
+  .message_of_support
   {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-    .sponsor_block p
+    .message_of_support p
     {
       padding: 0;
     }
@@ -2507,7 +2507,7 @@ iframe.twitter-tweet
 
 @media (max-width: 45em) and (min-width: 0)
 {
-  .sponsor_block
+  .message_of_support
   {
     top: 45px;
   }
