@@ -1267,7 +1267,7 @@ th, td
   background-repeat: no-repeat;
   background-color: #000000;
   background-position: 100% 15%;
-  height: 350px;
+  height: 500px;
 }
 
 .article-open, .article_feature_first-img, .profile
@@ -1391,7 +1391,7 @@ th, td
 
   .post_header
   {
-    height: 200px;
+    height: 400px;
   }
 
   .article_feature_first-img
@@ -1405,7 +1405,7 @@ th, td
 {
   .post_header
   {
-    height: 280px;
+    height: 300px;
   }
 }
 
