@@ -2372,57 +2372,6 @@ footer a
 
 /* Troy's custom bits */
 
-#ad1, #ad3, #ad4
-{
-  background-color: #D2D2D2;
-}
-
-#ad1
-{
-  margin: 18px 0 38px;
-  width: 300px;
-  height: 250px;
-}
-
-#ad2 div
-{
-  margin: 0 auto;
-  width: 160px;
-  height: 600px;
-}
-
-#ad3
-{
-  height: 90px;
-  width: 728px;
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: #cec9c4;
-  display: block;
-}
-
-  #ad3 iframe, #ad4 iframe
-  {
-    padding: 0;
-  }
-
-#ad4
-{
-  display: none;
-}
-
-#ad4
-{
-  margin: 0 auto;
-  width: 300px;
-  height: 250px;
-}
-
-.footer-ad
-{
-  padding-top: 5%;
-}
-
 #disqus_thread
 {
   padding-top: 1.84615rem;
@@ -2432,29 +2381,6 @@ iframe.twitter-tweet
 {
   margin-bottom: 2.5rem !important;
 }
-
-/* Banner ad has to go when the page is too narrow */
-@media (min-width:0)and (max-width:53em)
-{
-  #ad3
-  {
-    display: none;
-  }
-
-  #ad4
-  {
-    display: block;
-  }
-}
-
-@media (min-width:0)and (max-width:24em)
-{
-  #ad4
-  {
-    display: none;
-  }
-}
-
 
 .pluralsight-content
 {
