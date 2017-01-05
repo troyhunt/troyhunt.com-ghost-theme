@@ -1060,8 +1060,17 @@ th, td
   }
 }
 
-/* Can't fit all nav items all the time so kill the last onewhen there's not enough room */
+/* Can't fit all nav items all the time so kill the sponsor when there's not enough room */
 @media (min-width:65em)and (max-width:72em)
+{
+  .header_navMenu li:nth-last-child(2)
+  {
+    display: none;
+  }
+}
+
+/* Can't fit all nav items all the time so kill the search when there's not enough room */
+@media (min-width:65em)and (max-width:78em)
 {
   .header_navMenu li:last-child
   {
