@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
-    cmq = require('gulp-combine-media-queries');
+    mmq = require('gulp-merge-media-queries');
 	
 gulp.task('bundle-minify-js', function () {
   return gulp.src(['assets/js/classie.js', 'assets/js/main.js', 'assets/js/sponsorship.js', 'assets/js/disqus.js'])
@@ -21,10 +21,10 @@ gulp.task('bundle-minify-google-analytics', function () {
 
 gulp.task('styles-build', function() {
   return gulp.src('assets/css/main.css')
-    .pipe(cmq())
+    .pipe(mmq())
 	.pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('assets/css'));
-})
+    .pipe(gulp.dest('assets/css'))
+});
 
 gulp.task('default', ['bundle-minify-js', 'bundle-minify-google-analytics', 'styles-build']);
