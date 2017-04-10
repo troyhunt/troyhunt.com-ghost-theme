@@ -2158,6 +2158,7 @@ th, td
 .footer_subscription_block
 {
   background-color: #2f2d26;
+  color: #cec9c4;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -2180,7 +2181,6 @@ th, td
   padding-bottom: 3rem;
   display: inline-block;
   width: 100%;
-  color: #fcfbf7;
   font-size: 1.8em;
 }
 
@@ -2196,16 +2196,26 @@ footer a
   margin-bottom: 1rem;
 }
 
-
-.footer_subscription_formGroup p
+#subscribe_email
 {
-  padding: 0;
+  width: 20em;
 }
 
-.footer_subscription_formGroup svg
+#subscribe_successful, #subscribe_unsuccessful, #subscribe_loading, #confirm_captcha
 {
-  width: 57px;
-  height: 15px;
+  display: none;
+}
+
+#subscribe_form .fa-cog
+{
+  color: #cec9c4;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.g-recaptcha
+{
+  display: inline-block;
 }
 
 .footer_informations
@@ -2321,6 +2331,11 @@ footer a
   .header
   {
     height: 44px;
+  }
+
+  #subscribe_email
+  {
+    width: 14em;
   }
 }
 
