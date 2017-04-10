@@ -412,6 +412,11 @@ pre, code
     padding-bottom: 1.6rem;
   }
 
+.widget.sidebar-featured a.pluralsight-logo svg
+{
+  margin-bottom: 25px;
+}
+
 /* hide sidebar on non-desktop devices */
 @media (max-width: 1230px)
 {
