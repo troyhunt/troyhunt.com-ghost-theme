@@ -32,7 +32,15 @@ function reCaptchaSolved() {
   document.getElementById('confirm_captcha').style.display = 'none';
 
   var email = encodeURIComponent(document.getElementById('subscribe_email').value);
-  var emailCadence = document.getElementById('email_cadence').value;
+
+  var emailCadence;
+  var radios = document.getElementsByName('email_cadence');
+  for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+      emailCadence = radios[i].value;
+      break;
+    }
+  }
 
   var reCaptchaResponse = document.getElementById('g-recaptcha-response').value;
   var postData = 'Email=' + email +
