@@ -24,7 +24,4 @@ function showUnsponsored(){
 
 function showSponsor(sponsorMessage){
   document.getElementById('message_contents').innerHTML = '<a href="' + sponsorMessage.campaignUrl + '" target="_blank" rel="noopener"><strong>Sponsored by:</strong> ' + sponsorMessage.message + ' <i class="fa fa-external-link" aria-hidden="true"></i></a>';
-  [].forEach.call(document.querySelectorAll('.ad'), function (el) {
-    el.style.display = 'none';
-  });
 }
