@@ -32,8 +32,12 @@ function reCaptchaSolved() {
   document.getElementById('confirm_captcha').style.display = 'none';
 
   var email = document.getElementById('subscribe_email').value;
+  var emailCadence = document.getElementById('email_cadence').value;
+
   var reCaptchaResponse = document.getElementById('g-recaptcha-response').value;
-  var postData = 'email=' + email + '&g-recaptcha-response=' + reCaptchaResponse;
+  var postData = 'Email=' + email +
+                 '&EmailCadence=' + emailCadence +
+                 '&g-recaptcha-response=' + reCaptchaResponse;
 
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open('POST', 'http://local.bloghelpers.troyhunt.com/api/subscribe', true);
