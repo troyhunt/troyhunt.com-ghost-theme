@@ -111,7 +111,7 @@ button, input, label, select, textarea
   color: #fcfbf7;
   background-color: #565246;
   outline: 0;
-  webkit-appearance: button;
+  -webkit-border-radius: 0;
   cursor: pointer;
 }
 
@@ -2211,6 +2211,12 @@ footer a
   color: #cec9c4;
   font-size: 1.5em;
   vertical-align: middle;
+}
+
+.radio_button_group
+{
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .g-recaptcha

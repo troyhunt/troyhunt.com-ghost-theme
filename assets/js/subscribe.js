@@ -56,8 +56,14 @@ function reCaptchaSolved() {
       document.getElementById('subscribe_successful').style.display = 'block';
     }
     else {
-      document.getElementById('new_subscription').style.display = 'block';
+      var errorResponse = JSON.parse(this.responseText);
+      var errorMessage = errorResponse === 'FakeOrInvalid'
+        ? 'Uh oh, apparently that\'s a fake or invalid email, sorry!'
+        : 'Uh oh, that didn\'t work.Try submitting it again.';
+
+      document.getElementById('subscribe_unsuccessful').innerHTML = '<p>' + errorMessage + '</p >';
       document.getElementById('subscribe_unsuccessful').style.display = 'block';
+      document.getElementById('new_subscription').style.display = 'block';
     }
   };
   xmlhttp.send(postData);
