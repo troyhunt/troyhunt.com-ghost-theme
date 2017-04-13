@@ -32,6 +32,7 @@ function reCaptchaSolved() {
   document.getElementById('confirm_captcha').style.display = 'none';
 
   var email = encodeURIComponent(document.getElementById('subscribe_email').value);
+  var sourceUrl = encodeURIComponent(window.location);
 
   var emailCadence;
   var radios = document.getElementsByName('email_cadence');
@@ -45,6 +46,7 @@ function reCaptchaSolved() {
   var reCaptchaResponse = document.getElementById('g-recaptcha-response').value;
   var postData = 'Email=' + email +
                  '&EmailCadence=' + emailCadence +
+                 '&SourceUrl=' + sourceUrl +
                  '&g-recaptcha-response=' + reCaptchaResponse;
 
   var xmlhttp = new XMLHttpRequest();
