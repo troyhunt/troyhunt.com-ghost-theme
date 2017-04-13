@@ -2207,7 +2207,7 @@ footer a
   margin-bottom: 1rem;
 }
 
-#subscribe_email
+#email_to_subscribe
 {
   width: 20em;
 }
@@ -2350,7 +2350,7 @@ footer a
     height: 44px;
   }
 
-  #subscribe_email
+  #email_to_subscribe
   {
     width: 14em;
   }

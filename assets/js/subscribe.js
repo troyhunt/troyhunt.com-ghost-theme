@@ -31,7 +31,7 @@ function reCaptchaSolved() {
   // Hide the CAPTCHA
   document.getElementById('confirm_captcha').style.display = 'none';
 
-  var email = encodeURIComponent(document.getElementById('subscribe_email').value);
+  var email = encodeURIComponent(document.getElementById('email_to_subscribe').value);
   var sourceUrl = encodeURIComponent(window.location);
 
   var emailCadence;
