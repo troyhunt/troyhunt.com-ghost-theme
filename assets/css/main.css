@@ -120,6 +120,17 @@ input, label, select, textarea
   padding: 12px 20px;
 }
 
+  input[type="submit"]
+  {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+
+  input[type="radio"]
+  {
+    -webkit-border-radius: 12px;
+  }
+
 figure.img
 {
   padding-bottom: 1.84615rem;
@@ -2216,7 +2227,7 @@ footer a
 .radio_button_group
 {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .g-recaptcha
