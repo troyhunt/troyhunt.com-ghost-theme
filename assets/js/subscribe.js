@@ -50,7 +50,7 @@ function reCaptchaSolved() {
                  '&g-recaptcha-response=' + reCaptchaResponse;
 
   var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open('POST', 'http://bloghelpers.troyhunt.com/api/subscribe', true);
+  xmlhttp.open('POST', 'https://bloghelpers.troyhunt.com/api/subscribe', true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xmlhttp.onload = function () {
     document.getElementById('subscribe_loading').style.display = 'none';
