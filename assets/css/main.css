@@ -104,7 +104,7 @@ a
   color: #ccb285;
 }
 
-button, input, label, select, textarea
+button, input, select, textarea
 {
   font-family: Tahoma, Geneva, sans-serif;
   border: 0;
@@ -115,7 +115,7 @@ button, input, label, select, textarea
   cursor: pointer;
 }
 
-input, label, select, textarea
+input, select, textarea
 {
   padding: 12px 20px;
 }
