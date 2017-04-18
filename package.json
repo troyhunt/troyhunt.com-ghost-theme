@@ -1,6 +1,6 @@
 {
   "name": "TroyHuntCustom",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-merge-media-queries": "^0.2.0",

@@ -540,6 +540,11 @@ pre > code
   color: #595352;
 }
 
+twitterwidget
+{
+  padding-bottom: 1.92308rem;
+}
+
 th, td
 {
   padding: 0.7rem;
