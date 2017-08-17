@@ -9,13 +9,13 @@
 {{! Header transparent}}
 {{> header}}
 
-<div class="profile container {{#if cover}}" style="background-image: url({{cover}}){{else}}{{/if}}">
+<div class="profile container {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}{{/if}}">
     <div class="hover"></div>
     <article class="profile_item wrap">
         <header class="profile_head">
-            {{#if image}}
+            {{#if profile_image}}
             <figure class="profile_image">
-                <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+                <div class="img" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></div>
             </figure>
             {{/if}}
             <h1>{{name}}</h1>

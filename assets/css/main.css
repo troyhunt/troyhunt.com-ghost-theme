@@ -1383,7 +1383,7 @@ th, td
     height: auto;
   }
 
-.article_content, .page article.article
+.article_content, .page-template article.article
 {
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
@@ -2158,7 +2158,7 @@ th, td
   display: none;
 }
 
-.archive-template .extra-pagination, .tags
+.paged .extra-pagination, .tags
 {
   display: block;
 }

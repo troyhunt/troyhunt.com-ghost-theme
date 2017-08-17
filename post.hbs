@@ -12,7 +12,7 @@
 
 
 
-<div class="post_header container"{{#if image}} style="background-image: url({{image}})"{{/if}}>
+<div class="post_header container"{{#if feature_image}} style="background-image: url({{img_url feature_image}})"{{/if}}>
   <div class="hover"></div>
 </div>
 
@@ -46,7 +46,7 @@
                     <li class="socialIcons_link">
                         <a class="fa fa-envelope" href="mailto:?subject=Troy%20Hunt%3A%20{{encode title}}&amp;body={{url absolute="true"}}"></a>
                     </li>
-                </ul>         
+                </ul>
             </div>
             <span class="post_info">{{date format="DD MMMM YYYY"}}</span>
         </header>
@@ -57,7 +57,7 @@
     <article class="wrap">
         <section class="article_text post">
             {{content}}
-            
+
             {{#if tags}}
             <section class="article-open_tag">
                 {{#foreach tags}}
@@ -77,9 +77,9 @@
             </section>
             {{#author}}
             <section class="article-open_author">
-                {{#if image}}
+                {{#if profile_image}}
                 <figure class="article-open_author_image">
-                <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+                <div class="img" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></div>
                 </figure>
                 {{/if}}
                 <div class="article-open_author_bio">
@@ -92,7 +92,7 @@
                 <script>
                 var disqus_config = function () {
                 this.page.url = '{{@blog.url}}{{url}}';
-                this.page.identifier = 'ghost-{{id}}';
+                this.page.identifier = 'ghost-{{comment-id}}';
                 };
 
                 (function() {
