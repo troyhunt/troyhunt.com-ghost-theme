@@ -2538,3 +2538,16 @@ iframe.twitter-tweet
     top: 45px;
   }
 }
+
+@media print
+{
+  .header_block, .post_header, .message_of_support, .post_socialIcons, .footer_subscription_block, .footer_info_block, .article-open_shere, #disqus_thread
+  {
+    display: none;
+  }
+
+  .footer_informations_block
+  {
+    padding: 0 5%;
+  }
+}
