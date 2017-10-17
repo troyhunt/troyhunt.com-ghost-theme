@@ -355,7 +355,6 @@ blockquote:after
 
 pre, code
 {
-  margin: 0 0 1.75em;
   border: 1px solid #cec9c4;
   padding: 10px;
   font-family: "Courier New",Inconsolata,monospace,sans-serif;
@@ -368,6 +367,11 @@ pre, code
   word-wrap: break-word;
   display: block;
   font-size: 15.6px;
+}
+
+pre
+{
+  margin-bottom: 1.92308rem;
 }
 
 /* Sidebar stuff begin: */
