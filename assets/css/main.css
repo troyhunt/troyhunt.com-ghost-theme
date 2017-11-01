@@ -1134,15 +1134,6 @@ th, td
   }
 }
 
-/* Can't fit all nav items all the time so kill the search when there's not enough room */
-@media (min-width:65em)and (max-width:78em)
-{
-  .header_navMenu li:last-child
-  {
-    display: none;
-  }
-}
-
 .no-cover.header_block
 {
   position: relative;
