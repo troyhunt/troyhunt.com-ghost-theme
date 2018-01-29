@@ -23,15 +23,13 @@
 
   <div class="widget sidebar-featured">
     <h4 class="sidebar-featured-header">Must Read</h4>
-    {{#get "posts" limit="all" filter="featured:true"}}
     <ul>
-      {{#foreach posts}}
-      <li><a href="{{url}}">{{title}}</a></li>
-      {{/foreach}}
+      <li><a href="/data-breach-disclosure-101-how-to-succeed-after-youve-failed/">Data breach disclosure 101: How to succeed after you've failed</a></li>
+      <li><a href="/data-from-connected-cloudpets-teddy-bears-leaked-and-ransomed-exposing-kids-voice-messages/">Data from connected CloudPets teddy bears leaked and ransomed, exposing kids' voice messages</a></li>
+      <li><a href="/heres-how-i-verify-data-breaches/">Here's how I verify data breaches</a></li>
+      <li><a href="/when-nation-is-hacked-understanding/">When a nation is hacked: Understanding the ginormous Philippines data breach</a></li>
+      <li><a href="/how-i-optimised-my-life-to-make-my-job/">How I optimised my life to make my job redundant</a></li>
     </ul>
-    {{else}}
-    {{#if @error}}{{@error}}{{/if}}
-    {{/get}}
   </div>
 
   <div class="widget sidebar-featured">
