@@ -89,21 +89,8 @@
             </section>
             {{/author}}
                 <div id="disqus_thread"></div>
-                <script>
-                var disqus_config = function () {
-                this.page.url = '{{@blog.url}}{{url}}';
-                this.page.identifier = 'ghost-{{comment_id}}';
-                };
-
-                (function() {
-                var d = document, s = d.createElement('script');
-
-                s.src = '//troyhunt.disqus.com/embed.js';
-
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-                </script>
+                <div id="disqus_post_url" data="{{@blog.url}}{{url}}"></div>
+                <div id="disqus_post_identifier" data="ghost-{{comment_id}}"></div>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
         </footer>

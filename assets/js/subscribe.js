@@ -79,7 +79,8 @@ if (document.cookie.indexOf('closeFloatingSubscribe') === -1) {
 
 var closeElements = document.getElementsByClassName("close_floating_subscribe");
 
-var closeFloatingSubscribe = function () {
+var closeFloatingSubscribe = function (evt) {
+  evt.preventDefault();
   floating_subscribe.style.display = 'none';
   document.cookie = "closeFloatingSubscribe=true; expires=1 Jan 2030 00:00:00 UTC; path=/";
 };
