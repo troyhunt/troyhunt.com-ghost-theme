@@ -77,14 +77,13 @@ if (document.cookie.indexOf('closeFloatingSubscribe') === -1) {
   floating_subscribe.style.display = 'block';
 }
 
-var closeElements = document.getElementsByClassName("close_floating_subscribe");
-
-var closeFloatingSubscribe = function (evt) {
-  evt.preventDefault();
+function closeFloatingSubscribe() {
   floating_subscribe.style.display = 'none';
   document.cookie = "closeFloatingSubscribe=true; expires=1 Jan 2030 00:00:00 UTC; path=/";
 };
 
-for (var i = 0; i < closeElements.length; i++) {
-  closeElements[i].addEventListener('click', closeFloatingSubscribe, false);
-}
+var closeElement = document.getElementById("close_floating_subscribe");
+closeElement.addEventListener('click', function(evt){closeFloatingSubscribe();evt.preventDefault();}, false);
+
+var subscribeElement = document.getElementById("subscribe_link");
+subscribeElement.addEventListener('click', function(){closeFloatingSubscribe()}, false);
