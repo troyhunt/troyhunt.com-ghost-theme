@@ -22,7 +22,6 @@
 
   var openSocialWindow = function (evt) {
     evt.preventDefault();
-    floating_subscribe.style.display = 'none';
     window.open(this.href, 'social-share', 'width=580,height=296');
   };
 
