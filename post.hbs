@@ -75,7 +75,7 @@
                 <a class="article-open_shere-email" href="mailto:?subject=Troy%20Hunt%3A%20{{encode title}}&amp;body={{url absolute="true"}}"><i class="fa fa-envelope"></i> Email</a>
                 <a class="article-open_shere-feed" href="https://feeds.feedburner.com/TroyHunt"><i class="fa fa-rss"></i> RSS</a>
             </section>
-            {{#author}}
+            {{#primary_author}}
             <section class="article-open_author">
                 {{#if profile_image}}
                 <figure class="article-open_author_image">
@@ -87,7 +87,7 @@
                     {{#if bio}}<p>{{bio}} <a href="/about" class="article_link-more fa fa-long-arrow-right"></a></p>{{/if}}
                 </div>
             </section>
-            {{/author}}
+            {{/primary_author}}
                 <div id="disqus_thread"></div>
                 <div id="disqus_post_url" data="{{@blog.url}}{{url}}"></div>
                 <div id="disqus_post_identifier" data="ghost-{{comment_id}}"></div>
