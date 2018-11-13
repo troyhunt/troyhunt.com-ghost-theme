@@ -302,17 +302,13 @@ blockquote
 {
   padding-top: 1.84615rem;
   color: #595352;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.846em !important;
+  font-style: italic;
+  line-height: 1.52em;
 }
-
-  blockquote > p
-  {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.846em !important;
-    font-style: italic;
-    line-height: 1.52em;
-  }
 
 @media (min-width:25.0625em)and (max-width:65em)
 {
@@ -335,22 +331,24 @@ blockquote
   width: 100%;
 }
 
+blockquote:before, blockquote:after
+{
+  display: block;
+  font-size: 2.5em;
+  color: #ccb285;
+  text-align: center;
+}
+
 blockquote:before
 {
   content: '\201C';
-  display: block;
-  font-size: 5.1em;
-  color: #ccb285;
-  text-align: center;
 }
 
 blockquote:after
 {
   content: '\201D';
-  display: block;
-  font-size: 5.1em;
-  color: #ccb285;
-  text-align: center;
+  position: relative;
+  top: 30px;
 }
 
 pre, code
@@ -543,6 +541,11 @@ pre > code
   font-size: 1.4em;
   line-height: 1.7em;
   color: #595352;
+}
+
+figure
+{
+  padding-bottom: 1.92308rem;
 }
 
 twitterwidget
