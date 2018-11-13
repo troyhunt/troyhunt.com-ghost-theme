@@ -308,6 +308,7 @@ blockquote
   font-size: 1.846em !important;
   font-style: italic;
   line-height: 1.52em;
+  text-align: center;
 }
 
 @media (min-width:25.0625em)and (max-width:65em)
