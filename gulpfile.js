@@ -19,6 +19,13 @@ gulp.task('bundle-minify-google-analytics', function () {
     .pipe(gulp.dest('assets/js'))
 });
 
+gulp.task('bundle-minify-events-js', function () {
+  return gulp.src(['assets/js/events.js'])
+    .pipe(uglify())
+	.pipe(concat('events.min.js'))
+    .pipe(gulp.dest('assets/js'))
+});
+
 gulp.task('styles-build', function() {
   return gulp.src('assets/css/main.css')
     .pipe(mmq())
@@ -27,4 +34,4 @@ gulp.task('styles-build', function() {
     .pipe(gulp.dest('assets/css'))
 });
 
-gulp.task('default', ['bundle-minify-js', 'bundle-minify-google-analytics', 'styles-build']);
+gulp.task('default', ['bundle-minify-js', 'bundle-minify-google-analytics', 'bundle-minify-events-js', 'styles-build']);
