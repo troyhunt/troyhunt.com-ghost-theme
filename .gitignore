@@ -25,6 +25,7 @@ node_modules
 
 # Generated files
 assets/css/main.min.css
+assets/js/events.min.js
 assets/js/app.js
 
 # =========================
