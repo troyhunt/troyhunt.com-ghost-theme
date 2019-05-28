@@ -1,0 +1,3 @@
+Contact: mailto:security@troyhunt.com
+Contact: https://twitter.com/troyhunt
+Encryption: https://keybase.io/troyhunt
