@@ -1,36 +1,36 @@
 var eventsElement = document.getElementById('Events');
-if(eventsElement === null){
-    showNoEventsForYear();
+if (eventsElement === null) {
+  showNoEventsForYear();
 }
-else{
-var year = eventsElement.getAttribute('data-year');
-if(year === null){
+else {
+  var year = eventsElement.getAttribute('data-year');
+  if (year === null) {
     showNoEventsForYear();
-}
-else{
+  }
+  else {
     getEventData();
-}
+  }
 }
 
-function getEventData(){
-var xmlhttp = new XMLHttpRequest();
-var url = 'https://bloghelpers.troyhunt.com/api/events/' + year;
+function getEventData() {
+  var xmlhttp = new XMLHttpRequest();
+  var url = 'https://bloghelpers.troyhunt.com/api/events/' + year;
 
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState === 4 && this.status === 200) {
-    var events = JSON.parse(this.responseText);
-    if (events === null || events === undefined) {
-      showNoEventsForYear();
-    } else {
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      var events = JSON.parse(this.responseText);
+      if (events === null || events === undefined) {
+        showNoEventsForYear();
+      } else {
         showEventsForYear(events);
+      }
     }
-  }
-  else if (this.readyState === 4 && this.status !== 200) {
-    showNoEventsForYear();
-  }
-};
-xmlhttp.open('GET', url, true);
-xmlhttp.send();
+    else if (this.readyState === 4 && this.status !== 200) {
+      showNoEventsForYear();
+    }
+  };
+  xmlhttp.open('GET', url, true);
+  xmlhttp.send();
 }
 
 function showNoEventsForYear() {
@@ -43,15 +43,20 @@ function showEventsForYear(events) {
   } else {
     var eventsData = '<ol>';
     events.forEach(function (event) {
-      eventsData += '<li><a href="' + event.url + '">' + event.name + ': ' + event.date + ', ' + event.location + '</a>';
-      if(event.talks.length > 0){
+      if (event.url !== null) {
+        eventsData += '<li><a href="' + event.url + '">' + event.name + ': ' + event.date + ', ' + event.location + '</a></li>';
+      }
+      else {
+        eventsData += '<li>' + event.name + ': ' + event.date + ', ' + event.location + '</li>';
+      }
+      if (event.talks.length > 0) {
         eventsData += '<ol>';
         event.talks.forEach(function (talk) {
-            var talkDisplay = talk.name;
-            if(talk.eval !== "" && talk.eval !== null && talk.eval !== undefined) {
-                talkDisplay += ' &mdash; eval: ' + talk.eval;
-            }
-            eventsData += '<li>' + talkDisplay + '</li>';
+          var talkDisplay = talk.name;
+          if (talk.eval !== "" && talk.eval !== null && talk.eval !== undefined) {
+            talkDisplay += ' &mdash; eval: ' + talk.eval;
+          }
+          eventsData += '<li>' + talkDisplay + '</li>';
         });
         eventsData += '</ol>';
       }

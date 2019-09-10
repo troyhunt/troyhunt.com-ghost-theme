@@ -43,7 +43,12 @@ function showEvents(events) {
   } else {
     var eventsData = '<ol>';
     events.forEach(function (event) {
-      eventsData += '<li><a href="' + event.url + '">' + event.name + ': ' + event.date + ', ' + event.location + '</a></li>';
+      if (event.url !== null) {
+        eventsData += '<li><a href="' + event.url + '">' + event.name + ': ' + event.date + ', ' + event.location + '</a></li>';
+      }
+      else {
+        eventsData += '<li>' + event.name + ': ' + event.date + ', ' + event.location + '</li>';
+      }
     });
     eventsData += '</ol>';
     document.getElementById('events_list').innerHTML = eventsData;
