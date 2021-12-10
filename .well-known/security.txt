@@ -1,3 +1,14 @@
 Contact: mailto:security@troyhunt.com
 Contact: https://twitter.com/troyhunt
 Encryption: https://keybase.io/troyhunt
+
+# Don't even think about contacting me for a beg bounty! No, it's not a typo, read on...
+#
+# I run this site for free and rely on community goodwill. By all means, if you find an *actual*
+# security vulnerability then contact me and tell me what it is. If you'd like, encrypt your
+# message using the key from my Keybase account listed above. If you find something awesome then
+# I'd love to send you some stickers and a personally 3D printed Have I Been Pwned logo. But if
+# you've just run some automated tooling, found something trivial then reached out with the
+# expectation of cashing in, you're going to be disappointed.
+#
+# Read more: https://www.troyhunt.com/beg-bounties/
