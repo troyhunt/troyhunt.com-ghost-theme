@@ -140,7 +140,6 @@ article img
 {
   max-width: 100%;
   height: auto !important;
-  width: auto !important;
 }
 
 address
@@ -1223,7 +1222,7 @@ th, td
   text-decoration: none;
 }
 
-@media (min-width:0) and (max-width:50em)
+@media (min-width:0)and (max-width:50em)
 {
   .header_navMenu
   {
@@ -1241,7 +1240,7 @@ th, td
     top: 0;
     left: -100px;
     width: 0;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(44,42,36,.98);
     opacity: 0;
     z-index: 9;
