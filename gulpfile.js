@@ -34,4 +34,6 @@ gulp.task('styles-build', function() {
     .pipe(gulp.dest('assets/css'))
 });
 
-gulp.task('default', ['bundle-minify-js', 'bundle-minify-google-analytics', 'bundle-minify-events-js', 'styles-build']);
+var build = gulp.series(['bundle-minify-js', 'bundle-minify-google-analytics', 'bundle-minify-events-js', 'styles-build']);
+
+exports.default = build;
