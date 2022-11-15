@@ -2564,3 +2564,6 @@ iframe.twitter-tweet
     padding: 0 5%;
   }
 }
+
+/* These classes are necessary for theme compatibility with Ghost */
+.kg-width-wide, .kg-width-full {}
