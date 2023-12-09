@@ -1091,7 +1091,7 @@ th, td
   margin: 1.84615rem 0;
 }
 
-  .post_socialIcons .fa
+  .post_socialIcons .fa, .post_socialIcons .fa-brands
   {
     text-decoration: none;
   }
@@ -1790,7 +1790,7 @@ th, td
   font-family: Tahoma, Geneva, sans-serif;
 }
 
-.article-open_shere .fa
+.article-open_shere .fa, .article-open_shere .fa-brands
 {
   font-size: 16px;
 }
